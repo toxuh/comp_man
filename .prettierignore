@@ -1,0 +1,6 @@
+/coverage
+
+/build
+/.storybook/build
+
+src/serviceWorker.js
