@@ -10,7 +10,10 @@ const Panel = (props) => {
     <div className="Panel">
       {header && <div className="Panel__header">{header}</div>}
       {fields.map((field) => (
-        <p>{`${field.name}: ${field.value}`}</p>
+        <p className="Panel__field">
+          {`${field.name} -`}
+          <span>{field.value}</span>
+        </p>
       ))}
     </div>
   );

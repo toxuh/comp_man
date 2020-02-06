@@ -9,8 +9,21 @@ export const initialState = {
     status: 0,
     mood: 1,
   },
-  computer: {},
-  soft: {},
+  computer: {
+    computer: 0,
+    memory: 0,
+    hdd: 0,
+    modem: 0,
+    cd: 0,
+    sound: 0,
+  },
+  software: {
+    os: 0,
+    antivirus: 0,
+    programming: 0,
+    bbs: 0,
+    other: 0,
+  },
   date: {
     date: '01.01.1998',
     time: '9:00',
