@@ -10,7 +10,7 @@ const Panel = (props) => {
     <div className="Panel">
       {header && <div className="Panel__header">{header}</div>}
       {fields.map((field) => (
-        <p className="Panel__field">
+        <p key={field.name} className="Panel__field">
           {`${field.name} -`}
           <span>{field.value}</span>
         </p>
@@ -24,7 +24,7 @@ Panel.propTypes = {
   fields: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      value: PropTypes.string,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     }),
   ),
 };
