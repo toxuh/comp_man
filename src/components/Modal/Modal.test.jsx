@@ -16,7 +16,11 @@ describe('<Modal />', () => {
   it('renders', () => {
     expect.assertions(1);
 
-    const wrapper = mount(<Modal {...props}>{() => <p>1</p>}</Modal>);
+    const wrapper = mount(
+      <Modal {...props}>
+        <p>Modal test</p>
+      </Modal>,
+    );
 
     expect(wrapper).toMatchInlineSnapshot(`
       <Modal
