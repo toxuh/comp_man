@@ -1,3 +1,7 @@
 {
-  "containers.App.messages.welcome": "Добро пожаловать в игру \"Компьютерщик\""
+  "containers.AppLayout.messages.welcome": "Добро пожаловать в игру Компьютерщик",
+  "containers.PlayerPanel.messages.money": "Денег",
+  "containers.PlayerPanel.messages.mood": "Настроение",
+  "containers.PlayerPanel.messages.points": "Очки",
+  "containers.PlayerPanel.messages.status": "Ваш статус"
 }

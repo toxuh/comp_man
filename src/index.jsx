@@ -8,7 +8,7 @@ import * as serviceWorker from './serviceWorker';
 
 import store from '~/store';
 import I18nProvider from '~/i18n';
-import { App } from '~/containers';
+import App from '~/App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

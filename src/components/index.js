@@ -1,3 +1,5 @@
-import Popup from './Popup/Popup';
+import AppLayout from './AppLayout/AppLayout';
+import Modal from './Modal/Modal';
+import Panel from './Panel/Panel';
 
-export { Popup };
+export { AppLayout, Panel, Modal };

@@ -3,7 +3,19 @@ import produce from 'immer';
 import * as types from './types';
 
 export const initialState = {
-  currentDate: '01.01.1998',
+  player: {
+    money: 60,
+    points: 0,
+    status: 0,
+    mood: 1,
+  },
+  computer: {},
+  soft: {},
+  date: {
+    date: '01.01.1998',
+    time: '9:00',
+  },
+  work: {},
 };
 
 export default (state = initialState, action) =>

@@ -1,3 +1,7 @@
 {
-  "containers.App.messages.welcome": "Welcome to \"Computer man\" game"
+  "containers.AppLayout.messages.welcome": "Welcome to \"Computer man\" game",
+  "containers.PlayerPanel.messages.money": "Money",
+  "containers.PlayerPanel.messages.mood": "Mood",
+  "containers.PlayerPanel.messages.points": "Points",
+  "containers.PlayerPanel.messages.status": "Your status"
 }
