@@ -4,9 +4,9 @@ import { mount } from 'enzyme';
 import AppLayout from './AppLayout';
 
 const props = {
-  playerPanel: () => <div>Player panel</div>,
-  computerPanel: () => <div>Computer panel</div>,
-  softPanel: () => <div>Software panel</div>,
+  playerPanel: <div>Player panel</div>,
+  computerPanel: <div>Computer panel</div>,
+  softPanel: <div>Software panel</div>,
 };
 
 describe('<AppLayout />', () => {
@@ -17,9 +17,21 @@ describe('<AppLayout />', () => {
 
     expect(wrapper).toMatchInlineSnapshot(`
       <AppLayout
-        computerPanel={[Function]}
-        playerPanel={[Function]}
-        softPanel={[Function]}
+        computerPanel={
+          <div>
+            Computer panel
+          </div>
+        }
+        playerPanel={
+          <div>
+            Player panel
+          </div>
+        }
+        softPanel={
+          <div>
+            Software panel
+          </div>
+        }
       >
         <div
           className="App"
@@ -41,9 +53,15 @@ describe('<AppLayout />', () => {
                     <div
                       className="col"
                     >
-                      <Component />
-                      <Component />
-                      <Component />
+                      <div>
+                        Player panel
+                      </div>
+                      <div>
+                        Computer panel
+                      </div>
+                      <div>
+                        Software panel
+                      </div>
                     </div>
                   </Col>
                   <Col>
