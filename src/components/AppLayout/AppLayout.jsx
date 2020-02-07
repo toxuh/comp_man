@@ -5,18 +5,18 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './AppLayout.css';
 
 const AppLayout = (props) => {
-  const { computerPanel, playerPanel, softPanel } = props;
+  const { computerPanel, datePanel, playerPanel, softPanel } = props;
 
   return (
     <div className="App">
       <Container className="Game" fluid>
         <Row>
-          <Col>
+          <Col style={{ padding: '5px' }}>
             {playerPanel}
             {computerPanel}
             {softPanel}
           </Col>
-          <Col>Col 2</Col>
+          <Col style={{ padding: '5px' }}>{datePanel}</Col>
         </Row>
       </Container>
     </div>
@@ -27,6 +27,7 @@ AppLayout.propTypes = {
   playerPanel: PropTypes.node.isRequired,
   computerPanel: PropTypes.node.isRequired,
   softPanel: PropTypes.node.isRequired,
+  datePanel: PropTypes.node.isRequired,
 };
 
 export default AppLayout;

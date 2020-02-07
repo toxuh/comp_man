@@ -26,7 +26,7 @@ export const initialState = {
   },
   date: {
     date: '01.01.1998',
-    time: '9:00',
+    time: 9,
   },
   work: {},
 };

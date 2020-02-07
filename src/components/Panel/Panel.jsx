@@ -20,23 +20,17 @@ const Panel = (props) => {
 };
 
 Panel.propTypes = {
-  header: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   fields: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     }),
-  ),
+  ).isRequired,
+  header: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 };
 
 Panel.defaultProps = {
   header: false,
-  fields: [
-    {
-      name: '',
-      value: '',
-    },
-  ],
 };
 
 export default Panel;

@@ -6,11 +6,13 @@ import Modal from './Modal/Modal';
 import PlayerPanel from './PlayerPanel/PlayerPanel';
 import ComputerPanel from './ComputerPanel/ComputerPanel';
 import SoftPanel from './SoftPanel/SoftPanel';
+import DatePanel from './DatePanel/DatePanel';
 
 export {
   reducer,
   UI_ROOT_STORE_SLICE_NAME,
   AppLayout,
+  DatePanel,
   Modal,
   PlayerPanel,
   ComputerPanel,
