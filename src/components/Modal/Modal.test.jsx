@@ -8,6 +8,7 @@ const props = {
   trigger: {
     text: 'Open modal',
   },
+  header: 'Modal header',
   handleOpen: jest.fn(),
   handleClose: jest.fn(),
 };
@@ -26,7 +27,7 @@ describe('<Modal />', () => {
       <Modal
         handleClose={[MockFunction]}
         handleOpen={[MockFunction]}
-        header={false}
+        header="Modal header"
         isHeaderCloseButton={true}
         isOpened={false}
         trigger={

@@ -39,7 +39,7 @@ export default (state = initialState, action) =>
 
     switch (type) {
       case types.UPDATE_DATE: {
-        draft.currentDate = payload.date;
+        draft.date = payload;
 
         break;
       }

@@ -14,7 +14,10 @@
   },
   "license": "MIT",
   "author": "Anton Zakharov <zakharov.toxa@gmail.com> (https://github.com/toxuh)",
-  "private": true,
+  "contributors": [
+    "Yuri Dushenko (https://github.com/Dushenko)"
+  ],
+  "private": false,
   "dependencies": {
     "@formatjs/intl-pluralrules": "^1.5.0",
     "@formatjs/intl-relativetimeformat": "^4.5.7",
@@ -43,6 +46,9 @@
     "test": "craco test",
     "test:all": "craco test --watchAll=false",
     "test:ci": "cross-env CI=true craco test --ci",
+    "cover": "run-s -c cover:report cover:open",
+    "cover:report": "craco test --watchAll=false --coverage",
+    "cover:open": "open-cli coverage/lcov-report/index.html",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "lint:staged": "lint-staged",
