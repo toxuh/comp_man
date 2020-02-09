@@ -15,21 +15,6 @@ describe('<Modal />', () => {
 
     const wrapper = shallow(<Modal {...props}>Modal content</Modal>);
 
-    expect(wrapper).toMatchInlineSnapshot(`
-      <Modal
-        handleClose={[Function]}
-        handleOpen={[Function]}
-        header={false}
-        isHeaderCloseButton={true}
-        isOpened={false}
-        trigger={
-          Object {
-            "icon": "plus",
-          }
-        }
-      >
-        Modal content
-      </Modal>
-    `);
+    expect(wrapper).toMatchInlineSnapshot();
   });
 });

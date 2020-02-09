@@ -30,7 +30,11 @@ const Modal = (props) => {
 };
 
 Modal.propTypes = {
-  trigger: PropTypes.node.isRequired,
+  trigger: PropTypes.shape({
+    text: PropTypes.string,
+    className: PropTypes.string,
+    icon: PropTypes.string,
+  }).isRequired,
   children: PropTypes.node.isRequired,
 };
 
