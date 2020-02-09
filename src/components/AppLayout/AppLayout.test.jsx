@@ -39,73 +39,69 @@ describe('<AppLayout />', () => {
           </div>
         }
       >
-        <div
-          className="App"
+        <Container
+          className="Game"
+          fluid={true}
         >
-          <Container
-            className="Game"
-            fluid={true}
+          <div
+            className="Game container-fluid"
           >
-            <div
-              className="Game container-fluid"
+            <ForwardRef
+              noGutters={false}
             >
-              <ForwardRef
-                noGutters={false}
+              <div
+                className="row"
               >
-                <div
-                  className="row"
+                <Col
+                  style={
+                    Object {
+                      "padding": "5px",
+                    }
+                  }
                 >
-                  <Col
+                  <div
+                    className="col"
                     style={
                       Object {
                         "padding": "5px",
                       }
                     }
                   >
-                    <div
-                      className="col"
-                      style={
-                        Object {
-                          "padding": "5px",
-                        }
-                      }
-                    >
-                      <div>
-                        Player panel
-                      </div>
-                      <div>
-                        Computer panel
-                      </div>
-                      <div>
-                        Software panel
-                      </div>
+                    <div>
+                      Player panel
                     </div>
-                  </Col>
-                  <Col
+                    <div>
+                      Computer panel
+                    </div>
+                    <div>
+                      Software panel
+                    </div>
+                  </div>
+                </Col>
+                <Col
+                  style={
+                    Object {
+                      "padding": "5px",
+                    }
+                  }
+                >
+                  <div
+                    className="col"
                     style={
                       Object {
                         "padding": "5px",
                       }
                     }
                   >
-                    <div
-                      className="col"
-                      style={
-                        Object {
-                          "padding": "5px",
-                        }
-                      }
-                    >
-                      <div>
-                        Date panel
-                      </div>
+                    <div>
+                      Date panel
                     </div>
-                  </Col>
-                </div>
-              </ForwardRef>
-            </div>
-          </Container>
-        </div>
+                  </div>
+                </Col>
+              </div>
+            </ForwardRef>
+          </div>
+        </Container>
       </AppLayout>
     `);
   });

@@ -10,14 +10,18 @@ describe('<App />', () => {
     const wrapper = shallow(<App />);
 
     expect(wrapper).toMatchInlineSnapshot(`
-      <AppBootstrap>
-        <AppLayout
-          computerPanel={<ComputerPanel />}
-          datePanel={<DatePanel />}
-          playerPanel={<PlayerPanel />}
-          softPanel={<SoftPanel />}
-        />
-      </AppBootstrap>
+      <div
+        className="App"
+      >
+        <AppBootstrap>
+          <AppLayout
+            computerPanel={<ComputerPanel />}
+            datePanel={<DatePanel />}
+            playerPanel={<PlayerPanel />}
+            softPanel={<SoftPanel />}
+          />
+        </AppBootstrap>
+      </div>
     `);
   });
 });
