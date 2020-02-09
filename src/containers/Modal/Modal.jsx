@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Modal as ModalComponent } from '~/components';
 
 const Modal = (props) => {
-  const { children, ...otherProps } = props;
+  const { children, trigger, ...otherProps } = props;
   const [isOpened, toggleModal] = useState(false);
 
   const handleOpen = useCallback(() => {
@@ -18,6 +18,7 @@ const Modal = (props) => {
   return (
     <ModalComponent
       isOpened={isOpened}
+      trigger={trigger}
       handleOpen={handleOpen}
       handleClose={handleClose}
       /* eslint-disable-next-line */
@@ -29,6 +30,7 @@ const Modal = (props) => {
 };
 
 Modal.propTypes = {
+  trigger: PropTypes.node.isRequired,
   children: PropTypes.node.isRequired,
 };
 
