@@ -16,13 +16,17 @@ describe('<DatePanel />', () => {
 
     expect(wrapper).toMatchInlineSnapshot(`
       <div
-        className="Panel"
+        className="DatePanel"
       >
-        <div>
+        <div
+          className="DatePanel__field Date"
+        >
           14.03.1998
         </div>
-        <div>
-          14
+        <div
+          className="DatePanel__field Time"
+        >
+          14:00
         </div>
       </div>
     `);

@@ -49,9 +49,20 @@ describe('<AppLayout />', () => {
                 <div
                   className="row"
                 >
-                  <Col>
+                  <Col
+                    style={
+                      Object {
+                        "padding": "5px",
+                      }
+                    }
+                  >
                     <div
                       className="col"
+                      style={
+                        Object {
+                          "padding": "5px",
+                        }
+                      }
                     >
                       <div>
                         Player panel
@@ -64,12 +75,21 @@ describe('<AppLayout />', () => {
                       </div>
                     </div>
                   </Col>
-                  <Col>
+                  <Col
+                    style={
+                      Object {
+                        "padding": "5px",
+                      }
+                    }
+                  >
                     <div
                       className="col"
-                    >
-                      Col 2
-                    </div>
+                      style={
+                        Object {
+                          "padding": "5px",
+                        }
+                      }
+                    />
                   </Col>
                 </div>
               </ForwardRef>

@@ -1,5 +1,5 @@
 {
-  "containers.AppLayout.messages.welcome": "Добро пожаловать в игру Компьютерщик",
+  "containers.AppBootstrap.messages.compMan": "Компьютерщик",
   "containers.ComputerPanel.messages.cd": "CD-ROM",
   "containers.ComputerPanel.messages.computer": "Компьютер",
   "containers.ComputerPanel.messages.hdd": "Винчестер",

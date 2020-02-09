@@ -1,5 +1,5 @@
 {
-  "containers.AppLayout.messages.welcome": "Welcome to \"Computer man\" game",
+  "containers.AppBootstrap.messages.compMan": "Computer man",
   "containers.ComputerPanel.messages.cd": "CD-ROM",
   "containers.ComputerPanel.messages.computer": "Computer",
   "containers.ComputerPanel.messages.hdd": "HDD",

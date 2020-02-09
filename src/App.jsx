@@ -1,12 +1,13 @@
 import React from 'react';
 
 import {
-  AppLayout,
+  AppBootstrap,
   ComputerPanel,
   DatePanel,
   PlayerPanel,
   SoftPanel,
 } from '~/containers';
+import { AppLayout } from '~/components';
 
 import './App.css';
 
@@ -17,12 +18,14 @@ const App = () => {
   const datePanel = <DatePanel />;
 
   return (
-    <AppLayout
-      datePanel={datePanel}
-      playerPanel={playerPanel}
-      computerPanel={computerPanel}
-      softPanel={softPanel}
-    />
+    <AppBootstrap>
+      <AppLayout
+        datePanel={datePanel}
+        playerPanel={playerPanel}
+        computerPanel={computerPanel}
+        softPanel={softPanel}
+      />
+    </AppBootstrap>
   );
 };
 

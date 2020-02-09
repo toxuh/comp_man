@@ -4,6 +4,7 @@ import * as types from './types';
 
 export const initialState = {
   player: {
+    name: null,
     money: 60,
     points: 0,
     status: 0,
