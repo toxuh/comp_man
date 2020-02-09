@@ -8,18 +8,16 @@ const AppLayout = (props) => {
   const { computerPanel, datePanel, playerPanel, softPanel } = props;
 
   return (
-    <div className="App">
-      <Container className="Game" fluid>
-        <Row>
-          <Col style={{ padding: '5px' }}>
-            {playerPanel}
-            {computerPanel}
-            {softPanel}
-          </Col>
-          <Col style={{ padding: '5px' }}>{datePanel}</Col>
-        </Row>
-      </Container>
-    </div>
+    <Container className="Game" fluid>
+      <Row>
+        <Col style={{ padding: '5px' }}>
+          {playerPanel}
+          {computerPanel}
+          {softPanel}
+        </Col>
+        <Col style={{ padding: '5px' }}>{datePanel}</Col>
+      </Row>
+    </Container>
   );
 };
 

@@ -18,14 +18,16 @@ const App = () => {
   const datePanel = <DatePanel />;
 
   return (
-    <AppBootstrap>
-      <AppLayout
-        datePanel={datePanel}
-        playerPanel={playerPanel}
-        computerPanel={computerPanel}
-        softPanel={softPanel}
-      />
-    </AppBootstrap>
+    <div className="App">
+      <AppBootstrap>
+        <AppLayout
+          datePanel={datePanel}
+          playerPanel={playerPanel}
+          computerPanel={computerPanel}
+          softPanel={softPanel}
+        />
+      </AppBootstrap>
+    </div>
   );
 };
 

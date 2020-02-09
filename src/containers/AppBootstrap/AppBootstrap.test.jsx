@@ -18,7 +18,7 @@ describe('<AppBootstrap />', () => {
 
     const wrapper = shallow(<AppBootstrap>Welcome</AppBootstrap>);
 
-    expect(wrapper).toMatchInlineSnapshot(`""`);
+    expect(wrapper).toMatchInlineSnapshot(`<IntroduceScreen />`);
   });
 
   it('renders with player name', () => {

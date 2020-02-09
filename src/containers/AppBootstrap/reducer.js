@@ -44,6 +44,12 @@ export default (state = initialState, action) =>
         break;
       }
 
+      case types.CHANGE_PLAYER_NAME: {
+        draft.player = { ...draft.player, name: payload };
+
+        break;
+      }
+
       default: {
         return initialState;
       }

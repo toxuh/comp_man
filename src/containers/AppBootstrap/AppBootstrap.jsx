@@ -8,6 +8,8 @@ import { playerNameSelector } from './selectors';
 
 import messages from './messages';
 
+import IntroduceScreen from './IntroduceScreen';
+
 const AppBootstrap = (props) => {
   const intl = useIntl();
   const { children } = props;
@@ -15,8 +17,7 @@ const AppBootstrap = (props) => {
   const playerName = useSelector(playerNameSelector);
 
   if (!playerName) {
-    // We need to show first screen here
-    return null;
+    return <IntroduceScreen />;
   }
 
   return (

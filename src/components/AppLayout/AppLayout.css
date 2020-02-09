@@ -1,14 +1,4 @@
-.App {
-  align-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  height: 100vh;
-  justify-content: center;
-  width: 100vw;
-}
-
-.App .Game {
+.Game {
   height: 400px;
-  width: 535px;
+  width: 535px !important;
 }

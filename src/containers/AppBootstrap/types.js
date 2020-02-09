@@ -1,1 +1,2 @@
 export const UPDATE_DATE = 'RESET_GAME';
+export const CHANGE_PLAYER_NAME = 'CHANGE_PLAYER_NAME';

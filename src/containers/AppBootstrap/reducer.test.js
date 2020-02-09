@@ -39,4 +39,26 @@ describe('~/containers/AppBootstrap/reducer', () => {
 
     expect(received).toStrictEqual(expected);
   });
+
+  it('handles `CHANGE_PLAYER_NAME` action', () => {
+    expect.assertions(1);
+
+    const playerName = 'Player name';
+    const action = actions.changePlayerName(playerName);
+
+    const { received, expected } = testReducer({
+      stateBefore: initialState,
+      stateAfter: {
+        ...initialState,
+        player: {
+          ...initialState.player,
+          name: playerName,
+        },
+      },
+      action,
+      reducer,
+    });
+
+    expect(received).toStrictEqual(expected);
+  });
 });

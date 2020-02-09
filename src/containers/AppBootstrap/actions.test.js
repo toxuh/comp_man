@@ -22,4 +22,20 @@ describe('~/containers/AppBootstrap/actions', () => {
       `);
     });
   });
+
+  describe('changePlayerName', () => {
+    it('creates `CHANGE_PLAYER_NAME` action', () => {
+      expect.assertions(1);
+
+      const playerName = 'Player name';
+      const action = actions.changePlayerName(playerName);
+
+      expect(action).toMatchInlineSnapshot(`
+        Object {
+          "payload": "Player name",
+          "type": "CHANGE_PLAYER_NAME",
+        }
+      `);
+    });
+  });
 });
