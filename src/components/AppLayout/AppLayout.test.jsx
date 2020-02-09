@@ -7,6 +7,7 @@ const props = {
   playerPanel: <div>Player panel</div>,
   computerPanel: <div>Computer panel</div>,
   softPanel: <div>Software panel</div>,
+  datePanel: <div>Date panel</div>,
 };
 
 describe('<AppLayout />', () => {
@@ -20,6 +21,11 @@ describe('<AppLayout />', () => {
         computerPanel={
           <div>
             Computer panel
+          </div>
+        }
+        datePanel={
+          <div>
+            Date panel
           </div>
         }
         playerPanel={
@@ -89,7 +95,11 @@ describe('<AppLayout />', () => {
                           "padding": "5px",
                         }
                       }
-                    />
+                    >
+                      <div>
+                        Date panel
+                      </div>
+                    </div>
                   </Col>
                 </div>
               </ForwardRef>

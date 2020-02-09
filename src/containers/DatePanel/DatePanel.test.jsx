@@ -4,7 +4,10 @@ import { shallow } from 'enzyme';
 import DatePanel from './DatePanel';
 
 jest.mock('react-redux', () => ({
-  useSelector: jest.fn(() => 0),
+  useSelector: jest
+    .fn()
+    .mockReturnValueOnce('01.01.1998')
+    .mockReturnValueOnce(9),
 }));
 
 describe('<DatePanel />', () => {
@@ -15,8 +18,8 @@ describe('<DatePanel />', () => {
 
     expect(wrapper).toMatchInlineSnapshot(`
       <DatePanel
-        date={0}
-        time={0}
+        date="01.01.1998"
+        time={9}
       />
     `);
   });
