@@ -3,6 +3,12 @@ import { shallow } from 'enzyme';
 
 import I18nProvider from './I18nProvider';
 
+jest.mock('react', () => {
+  const r = jest.requireActual('react');
+
+  return { ...r, memo: (x) => x };
+});
+
 describe('<I18nProvider />', () => {
   it('renders', () => {
     expect.assertions(1);
