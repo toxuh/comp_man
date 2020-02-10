@@ -13,7 +13,11 @@ describe('<I18nProvider />', () => {
   it('renders', () => {
     expect.assertions(1);
 
-    const wrapper = shallow(<I18nProvider />);
+    const wrapper = shallow(
+      <I18nProvider>
+        <div>Children</div>
+      </I18nProvider>,
+    );
 
     expect(wrapper).toMatchInlineSnapshot(`
       <Component
@@ -47,7 +51,11 @@ describe('<I18nProvider />', () => {
             "containers.SoftPanel.messages.programming": "Программи-ие",
           }
         }
-      />
+      >
+        <div>
+          Children
+        </div>
+      </Component>
     `);
   });
 });
