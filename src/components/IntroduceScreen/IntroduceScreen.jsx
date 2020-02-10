@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useIntl } from 'react-intl';
@@ -9,10 +9,9 @@ const IntroduceScreen = (props) => {
   const intl = useIntl();
   const { onPlayerNameChange } = props;
 
-  const [playerName, changeNAme] = useState(null);
+  const [playerName, changeName] = useState(null);
 
   const submitText = useMemo(() => intl.formatMessage(messages.submit), [intl]);
-  const handleChange = useCallback((e) => changeNAme(e.target.value), []);
 
   return (
     <Form>
@@ -23,7 +22,7 @@ const IntroduceScreen = (props) => {
             name="name"
             placeholder={intl.formatMessage(messages.typeYourName)}
             required
-            onChange={handleChange}
+            onChange={(e) => changeName(e.target.value)}
           />
         </Col>
         <Col>
