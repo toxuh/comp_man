@@ -5,7 +5,7 @@ import { useIntl } from 'react-intl';
 import * as selectors from './selectors';
 import messages from './messages';
 
-import { Panel as PanelComponent } from '~/components';
+import { Dictionary, Panel as PanelComponent } from '~/components';
 
 const ComputerPanel = () => {
   const intl = useIntl();
@@ -20,12 +20,30 @@ const ComputerPanel = () => {
   const panelProps = {
     header: intl.formatMessage(messages.header),
     fields: [
-      { name: intl.formatMessage(messages.computer), value: computer },
-      { name: intl.formatMessage(messages.memory), value: memory },
-      { name: intl.formatMessage(messages.hdd), value: hdd },
-      { name: intl.formatMessage(messages.modem), value: modem },
-      { name: intl.formatMessage(messages.cd), value: cd },
-      { name: intl.formatMessage(messages.sound), value: sound },
+      {
+        name: intl.formatMessage(messages.computer),
+        value: <Dictionary name="computer" value={computer} />,
+      },
+      {
+        name: intl.formatMessage(messages.memory),
+        value: <Dictionary name="memory" value={memory} />,
+      },
+      {
+        name: intl.formatMessage(messages.hdd),
+        value: <Dictionary name="hdd" value={hdd} />,
+      },
+      {
+        name: intl.formatMessage(messages.modem),
+        value: <Dictionary name="modem" value={modem} />,
+      },
+      {
+        name: intl.formatMessage(messages.cd),
+        value: <Dictionary name="cd" value={cd} />,
+      },
+      {
+        name: intl.formatMessage(messages.sound),
+        value: <Dictionary name="sound" value={sound} />,
+      },
     ],
   };
 

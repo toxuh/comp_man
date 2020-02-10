@@ -23,7 +23,11 @@ Panel.propTypes = {
   fields: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      value: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+        PropTypes.node,
+      ]),
     }),
   ).isRequired,
   header: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),

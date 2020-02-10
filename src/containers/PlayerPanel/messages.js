@@ -5,11 +5,4 @@ export default defineMessages({
   points: 'Points',
   status: 'Your status',
   mood: 'Mood',
-  bad: 'Bad',
-  normal: 'Normal',
-  good: 'Good',
-  excellent: 'Excellent',
-  newbie: 'Newbie',
-  programmer: 'Programmer',
-  hacker: 'Hacker',
 });

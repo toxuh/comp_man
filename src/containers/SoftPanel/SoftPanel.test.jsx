@@ -19,23 +19,38 @@ describe('<SoftPanel />', () => {
           Array [
             Object {
               "name": "OS",
-              "value": 0,
+              "value": <Dictionary
+                name="os"
+                value={0}
+              />,
             },
             Object {
               "name": "Antivirus",
-              "value": 0,
+              "value": <Dictionary
+                name="antivirus"
+                value={0}
+              />,
             },
             Object {
               "name": "Programming",
-              "value": 0,
+              "value": <Dictionary
+                name="programming"
+                value={0}
+              />,
             },
             Object {
               "name": "BBS",
-              "value": 0,
+              "value": <Dictionary
+                name="antivirus"
+                value={0}
+              />,
             },
             Object {
               "name": "Other software",
-              "value": 0,
+              "value": <Dictionary
+                name="antivirus"
+                value={0}
+              />,
             },
           ]
         }

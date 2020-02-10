@@ -5,7 +5,7 @@ import { useIntl } from 'react-intl';
 import * as selectors from './selectors';
 import messages from './messages';
 
-import { Panel as PanelComponent } from '~/components';
+import { Dictionary, Panel as PanelComponent } from '~/components';
 
 const PlayerPanel = () => {
   const intl = useIntl();
@@ -15,20 +15,6 @@ const PlayerPanel = () => {
   const status = useSelector(selectors.statusSelector);
   const mood = useSelector(selectors.moodSelector);
 
-  const PLAYER_DICTIONARY = {
-    status: [
-      intl.formatMessage(messages.newbie),
-      intl.formatMessage(messages.programmer),
-      intl.formatMessage(messages.hacker),
-    ],
-    mood: [
-      intl.formatMessage(messages.bad),
-      intl.formatMessage(messages.normal),
-      intl.formatMessage(messages.good),
-      intl.formatMessage(messages.excellent),
-    ],
-  };
-
   const panelProps = {
     header: false,
     fields: [
@@ -36,11 +22,11 @@ const PlayerPanel = () => {
       { name: intl.formatMessage(messages.points), value: points },
       {
         name: intl.formatMessage(messages.status),
-        value: PLAYER_DICTIONARY.status[status],
+        value: <Dictionary name="status" value={status} />,
       },
       {
         name: intl.formatMessage(messages.mood),
-        value: PLAYER_DICTIONARY.mood[mood],
+        value: <Dictionary name="mood" value={mood} />,
       },
     ],
   };

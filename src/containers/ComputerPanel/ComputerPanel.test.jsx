@@ -19,27 +19,45 @@ describe('<ComputerPanel />', () => {
           Array [
             Object {
               "name": "Computer",
-              "value": 0,
+              "value": <Dictionary
+                name="computer"
+                value={0}
+              />,
             },
             Object {
               "name": "RAM",
-              "value": 0,
+              "value": <Dictionary
+                name="memory"
+                value={0}
+              />,
             },
             Object {
               "name": "HDD",
-              "value": 0,
+              "value": <Dictionary
+                name="hdd"
+                value={0}
+              />,
             },
             Object {
               "name": "Modem",
-              "value": 0,
+              "value": <Dictionary
+                name="modem"
+                value={0}
+              />,
             },
             Object {
               "name": "CD-ROM",
-              "value": 0,
+              "value": <Dictionary
+                name="cd"
+                value={0}
+              />,
             },
             Object {
               "name": "Sound Blaster",
-              "value": 0,
+              "value": <Dictionary
+                name="sound"
+                value={0}
+              />,
             },
           ]
         }

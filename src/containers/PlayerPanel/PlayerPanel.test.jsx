@@ -27,11 +27,17 @@ describe('<PlayerPanel />', () => {
             },
             Object {
               "name": "Your status",
-              "value": "Newbie",
+              "value": <Dictionary
+                name="status"
+                value={0}
+              />,
             },
             Object {
               "name": "Mood",
-              "value": "Bad",
+              "value": <Dictionary
+                name="mood"
+                value={0}
+              />,
             },
           ]
         }

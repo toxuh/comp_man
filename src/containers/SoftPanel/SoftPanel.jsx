@@ -5,7 +5,7 @@ import { useIntl } from 'react-intl';
 import * as selectors from './selectors';
 import messages from './messages';
 
-import { Panel as PanelComponent } from '~/components';
+import { Dictionary, Panel as PanelComponent } from '~/components';
 
 const SoftPanel = () => {
   const intl = useIntl();
@@ -19,11 +19,26 @@ const SoftPanel = () => {
   const panelProps = {
     header: intl.formatMessage(messages.header),
     fields: [
-      { name: intl.formatMessage(messages.os), value: os },
-      { name: intl.formatMessage(messages.antivirus), value: antivirus },
-      { name: intl.formatMessage(messages.programming), value: programming },
-      { name: intl.formatMessage(messages.bbs), value: bbs },
-      { name: intl.formatMessage(messages.other), value: other },
+      {
+        name: intl.formatMessage(messages.os),
+        value: <Dictionary name="os" value={os} />,
+      },
+      {
+        name: intl.formatMessage(messages.antivirus),
+        value: antivirus || <Dictionary name="antivirus" value={antivirus} />,
+      },
+      {
+        name: intl.formatMessage(messages.programming),
+        value: <Dictionary name="programming" value={programming} />,
+      },
+      {
+        name: intl.formatMessage(messages.bbs),
+        value: <Dictionary name="antivirus" value={bbs} />,
+      },
+      {
+        name: intl.formatMessage(messages.other),
+        value: <Dictionary name="antivirus" value={other} />,
+      },
     ],
   };
 
