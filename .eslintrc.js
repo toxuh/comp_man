@@ -61,7 +61,7 @@ module.exports = {
     'jest/no-hooks': 'off',
 
     'no-console': errorOnProduction,
-    'no-alert': errorOnProduction,
+    'no-alert': 'warn',
     'no-debugger': errorOnProduction,
   },
 
