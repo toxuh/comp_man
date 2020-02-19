@@ -16,7 +16,7 @@ const IntroduceScreen = (props) => {
   const submitText = useMemo(() => intl.formatMessage(messages.submit), [intl]);
 
   return (
-    <Form>
+    <Form className="IntroduceScreen">
       <Row>
         <Col>
           <Form.Control

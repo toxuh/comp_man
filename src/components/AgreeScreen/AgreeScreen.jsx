@@ -18,7 +18,7 @@ const AgreeScreen = (props) => {
   const submitText = useMemo(() => intl.formatMessage(messages.submit), [intl]);
 
   return (
-    <Container fluid>
+    <Container className="AgreeScreen" fluid>
       <Row>
         <Col>
           <h1>{headingText}</h1>
