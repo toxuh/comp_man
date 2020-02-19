@@ -19,6 +19,7 @@ describe('<App />', () => {
             datePanel={<DatePanel />}
             playerPanel={<PlayerPanel />}
             softPanel={<SoftPanel />}
+            workPanel={<WorkPanel />}
           />
         </AppBootstrap>
       </div>

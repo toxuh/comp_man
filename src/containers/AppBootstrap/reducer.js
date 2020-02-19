@@ -30,7 +30,10 @@ export const initialState = {
     date: 'Thu Jan 01 1998 09:00:00 GMT+0100 (Central European Standard Time)',
     counting: false,
   },
-  work: {},
+  work: {
+    position: 0,
+    salary: 0,
+  },
 };
 
 export default (state = initialState, action) =>

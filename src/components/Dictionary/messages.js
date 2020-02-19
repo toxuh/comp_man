@@ -9,4 +9,6 @@ export default defineMessages({
   newbie: 'Newbie',
   programmer: 'Programmer',
   hacker: 'Hacker',
+  unemployed: 'Unemployed',
+  locksmith: 'Locksmith',
 });

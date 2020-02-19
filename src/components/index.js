@@ -5,6 +5,7 @@ import Dictionary from './Dictionary/Dictionary';
 import IntroduceScreen from './IntroduceScreen/IntroduceScreen';
 import Modal from './Modal/Modal';
 import Panel from './Panel/Panel';
+import WorkPanel from './WorkPanel/WorkPanel';
 
 export {
   AgreeScreen,
@@ -12,6 +13,7 @@ export {
   DatePanel,
   Dictionary,
   IntroduceScreen,
-  Panel,
   Modal,
+  Panel,
+  WorkPanel,
 };

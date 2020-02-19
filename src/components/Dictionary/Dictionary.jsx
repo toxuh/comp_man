@@ -42,6 +42,10 @@ const Dictionary = (props) => {
     ],
     bbs: [intl.formatMessage(messages.no)],
     other: [intl.formatMessage(messages.no)],
+    position: [
+      intl.formatMessage(messages.unemployed),
+      intl.formatMessage(messages.locksmith),
+    ],
   };
 
   return values[name][value];

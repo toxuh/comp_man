@@ -16,7 +16,7 @@ const state = {
 
 describe('~/containers/DatePanel/selectors', () => {
   describe('allDateSelector', () => {
-    it("selects computer store's slice", () => {
+    it("selects date store's slice", () => {
       expect.assertions(1);
 
       expect(selectors.allDateSelector(state)).toStrictEqual(

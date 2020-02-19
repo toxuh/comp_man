@@ -7,6 +7,7 @@ import DatePanel from './DatePanel/DatePanel';
 import Modal from './Modal/Modal';
 import PlayerPanel from './PlayerPanel/PlayerPanel';
 import SoftPanel from './SoftPanel/SoftPanel';
+import WorkPanel from './WorkPanel/WorkPanel';
 
 export {
   reducer,
@@ -17,4 +18,5 @@ export {
   Modal,
   PlayerPanel,
   SoftPanel,
+  WorkPanel,
 };
