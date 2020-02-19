@@ -47,7 +47,9 @@ describe('~/containers/DatePanel/selectors', () => {
     it('selects `9` from full date', () => {
       expect.assertions(1);
 
-      expect(selectors.timeSelector(state)).toStrictEqual(9);
+      const date = new Date(state[ROOT][DATE_PANEL].date);
+
+      expect(selectors.timeSelector(state)).toStrictEqual(date.getHours());
     });
   });
 
