@@ -26,7 +26,7 @@ const WorkPanel = (props) => {
 };
 
 WorkPanel.propTypes = {
-  position: PropTypes.string.isRequired,
+  position: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   salary: PropTypes.number.isRequired,
 };
 
