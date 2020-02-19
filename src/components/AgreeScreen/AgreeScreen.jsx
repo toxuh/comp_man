@@ -5,6 +5,8 @@ import { useIntl } from 'react-intl';
 
 import messages from './messages';
 
+import './AgreeScreen.css';
+
 const AgreeScreen = (props) => {
   const intl = useIntl();
   const { onSubmitAgree } = props;

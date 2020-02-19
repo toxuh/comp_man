@@ -5,6 +5,8 @@ import { useIntl } from 'react-intl';
 
 import messages from './messages';
 
+import './IntroduceScreen.css';
+
 const IntroduceScreen = (props) => {
   const intl = useIntl();
   const { onPlayerNameChange } = props;
