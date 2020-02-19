@@ -1,4 +1,7 @@
 {
+  "components.AgreeScreen.messages.heading": "Play and enjoy",
+  "components.AgreeScreen.messages.mainText": "When you complete this game, blah blah blah",
+  "components.AgreeScreen.messages.submit": "OK",
   "components.Dictionary.messages.bad": "Bad",
   "components.Dictionary.messages.excellent": "Excellent",
   "components.Dictionary.messages.good": "Good",
