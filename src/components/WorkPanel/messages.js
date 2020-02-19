@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  yourJob: 'Your job',
+  header: 'Your job',
   perDay: 'per day',
 });

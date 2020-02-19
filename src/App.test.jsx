@@ -15,6 +15,7 @@ describe('<App />', () => {
       >
         <AppBootstrap>
           <AppLayout
+            actionsPanel={<ActionsPanel />}
             computerPanel={<ComputerPanel />}
             datePanel={<DatePanel />}
             playerPanel={<PlayerPanel />}

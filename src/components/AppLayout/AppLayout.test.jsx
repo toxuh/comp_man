@@ -9,6 +9,7 @@ const props = {
   softPanel: <div>Software panel</div>,
   datePanel: <div>Date panel</div>,
   workPanel: <div>Work panel</div>,
+  actionsPanel: <div>Actions panel</div>,
 };
 
 describe('<AppLayout />', () => {
@@ -19,6 +20,11 @@ describe('<AppLayout />', () => {
 
     expect(wrapper).toMatchInlineSnapshot(`
       <AppLayout
+        actionsPanel={
+          <div>
+            Actions panel
+          </div>
+        }
         computerPanel={
           <div>
             Computer panel
@@ -104,6 +110,9 @@ describe('<AppLayout />', () => {
                     </div>
                     <div>
                       Work panel
+                    </div>
+                    <div>
+                      Actions panel
                     </div>
                   </div>
                 </Col>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+  ActionsPanel,
   AppBootstrap,
   ComputerPanel,
   DatePanel,
@@ -18,11 +19,13 @@ const App = () => {
   const softPanel = <SoftPanel />;
   const datePanel = <DatePanel />;
   const workPanel = <WorkPanel />;
+  const actionsPanel = <ActionsPanel />;
 
   return (
     <div className="App">
       <AppBootstrap>
         <AppLayout
+          actionsPanel={actionsPanel}
           datePanel={datePanel}
           playerPanel={playerPanel}
           computerPanel={computerPanel}

@@ -12,9 +12,7 @@ const WorkPanel = (props) => {
 
   return (
     <div className="WorkPanel">
-      <div className="Panel__header">
-        {intl.formatMessage(messages.yourJob)}
-      </div>
+      <div className="Panel__header">{intl.formatMessage(messages.header)}</div>
       <div className="WorkPanel__field">
         {position} /{salary}$
         <span className="WorkPanel__description">

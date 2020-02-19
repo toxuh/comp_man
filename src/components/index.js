@@ -1,3 +1,4 @@
+import ActionsPanel from './ActionsPanel/ActionsPanel';
 import AgreeScreen from './AgreeScreen/AgreeScreen';
 import AppLayout from './AppLayout/AppLayout';
 import DatePanel from './DatePanel/DatePanel';
@@ -8,6 +9,7 @@ import Panel from './Panel/Panel';
 import WorkPanel from './WorkPanel/WorkPanel';
 
 export {
+  ActionsPanel,
   AgreeScreen,
   AppLayout,
   DatePanel,
