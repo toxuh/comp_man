@@ -1,35 +1,27 @@
 import * as selectors from './selectors';
 
-import { STORE_SLICE_NAME as APP_BOOTSTRAP } from '../PlayerPanel/constants';
-
 import { STORE_SLICE_NAME as ROOT } from '../constants';
 
 const state = {
   [ROOT]: {
-    [APP_BOOTSTRAP]: {
-      name: 'Player name',
-    },
+    agreed: false,
   },
 };
 
 describe('~/containers/AppBootstrap/selectors', () => {
-  describe('playerSelector', () => {
-    it("selects player store's slice", () => {
+  describe('gameSelector', () => {
+    it("selects all game store's slice", () => {
       expect.assertions(1);
 
-      expect(selectors.playerSelector(state)).toStrictEqual(
-        state[ROOT][APP_BOOTSTRAP],
-      );
+      expect(selectors.gameSelector(state)).toStrictEqual(state[ROOT]);
     });
   });
 
-  describe('playerNameSelector', () => {
-    it('selects `.name`', () => {
+  describe('agreedSelector', () => {
+    it('selects `.agreed`', () => {
       expect.assertions(1);
 
-      expect(selectors.playerNameSelector(state)).toStrictEqual(
-        state[ROOT][APP_BOOTSTRAP].name,
-      );
+      expect(selectors.agreedSelector(state)).toStrictEqual(state[ROOT].agreed);
     });
   });
 });

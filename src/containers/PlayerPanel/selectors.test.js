@@ -26,6 +26,16 @@ describe('~/containers/PlayerPanel/selectors', () => {
     });
   });
 
+  describe('playerNameSelector', () => {
+    it('selects `.name`', () => {
+      expect.assertions(1);
+
+      expect(selectors.playerNameSelector(state)).toStrictEqual(
+        state[ROOT][PLAYER_PANEL].name,
+      );
+    });
+  });
+
   describe('moneySelector', () => {
     it('selects `.money`', () => {
       expect.assertions(1);

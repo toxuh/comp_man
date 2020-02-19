@@ -18,3 +18,8 @@ export const timeSelector = createSelector(
   allDateSelector,
   (date) => date.time,
 );
+
+export const isCountingSelector = createSelector(
+  allDateSelector,
+  (date) => date.counting,
+);

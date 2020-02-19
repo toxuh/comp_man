@@ -3,6 +3,7 @@ import produce from 'immer';
 import * as types from './types';
 
 export const initialState = {
+  agreed: false,
   player: {
     name: null,
     money: 60,
@@ -28,6 +29,7 @@ export const initialState = {
   date: {
     date: '01.01.1998',
     time: 9,
+    counting: false,
   },
   work: {},
 };
@@ -38,14 +40,32 @@ export default (state = initialState, action) =>
     const { type, payload } = action;
 
     switch (type) {
-      case types.UPDATE_DATE: {
-        draft.date = payload;
+      case types.CHANGE_PLAYER_NAME: {
+        draft.player = { ...draft.player, name: payload };
 
         break;
       }
 
-      case types.CHANGE_PLAYER_NAME: {
-        draft.player = { ...draft.player, name: payload };
+      case types.CHANGE_AGREED: {
+        draft.agreed = true;
+
+        break;
+      }
+
+      case types.TIME_START: {
+        draft.date.counting = true;
+
+        break;
+      }
+
+      case types.TIME_STOP: {
+        draft.date.counting = false;
+
+        break;
+      }
+
+      case types.UPDATE_DATE: {
+        draft.date = payload;
 
         break;
       }

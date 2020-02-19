@@ -18,28 +18,6 @@ describe('~/containers/AppBootstrap/reducer', () => {
     expect(received).toStrictEqual(expected);
   });
 
-  it('handles `UPDATE_DATE` action', () => {
-    expect.assertions(1);
-
-    const newDate = {
-      date: '01.01.1998',
-      time: 10,
-    };
-    const action = actions.updateDate(newDate);
-
-    const { received, expected } = testReducer({
-      stateBefore: initialState,
-      stateAfter: {
-        ...initialState,
-        date: newDate,
-      },
-      action,
-      reducer,
-    });
-
-    expect(received).toStrictEqual(expected);
-  });
-
   it('handles `CHANGE_PLAYER_NAME` action', () => {
     expect.assertions(1);
 
@@ -54,6 +32,88 @@ describe('~/containers/AppBootstrap/reducer', () => {
           ...initialState.player,
           name: playerName,
         },
+      },
+      action,
+      reducer,
+    });
+
+    expect(received).toStrictEqual(expected);
+  });
+
+  it('handles `CHANGE_AGREED` action', () => {
+    expect.assertions(1);
+
+    const action = actions.agree();
+
+    const { received, expected } = testReducer({
+      stateBefore: initialState,
+      stateAfter: {
+        ...initialState,
+        agreed: true,
+      },
+      action,
+      reducer,
+    });
+
+    expect(received).toStrictEqual(expected);
+  });
+
+  it('handles `TIME_START` action', () => {
+    expect.assertions(1);
+
+    const action = actions.timeStart();
+
+    const { received, expected } = testReducer({
+      stateBefore: initialState,
+      stateAfter: {
+        ...initialState,
+        date: {
+          ...initialState.date,
+          counting: true,
+        },
+      },
+      action,
+      reducer,
+    });
+
+    expect(received).toStrictEqual(expected);
+  });
+
+  it('handles `TIME_STOP` action', () => {
+    expect.assertions(1);
+
+    const action = actions.timeStop();
+
+    const { received, expected } = testReducer({
+      stateBefore: initialState,
+      stateAfter: {
+        ...initialState,
+        date: {
+          ...initialState.date,
+          counting: false,
+        },
+      },
+      action,
+      reducer,
+    });
+
+    expect(received).toStrictEqual(expected);
+  });
+
+  it('handles `UPDATE_DATE` action', () => {
+    expect.assertions(1);
+
+    const newDate = {
+      date: '01.01.1998',
+      time: 10,
+    };
+    const action = actions.updateDate(newDate);
+
+    const { received, expected } = testReducer({
+      stateBefore: initialState,
+      stateAfter: {
+        ...initialState,
+        date: newDate,
       },
       action,
       reducer,

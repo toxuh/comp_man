@@ -9,6 +9,11 @@ export const playerSelector = createSelector(
   (uiRoot) => uiRoot[STORE_SLICE_NAME],
 );
 
+export const playerNameSelector = createSelector(
+  playerSelector,
+  (player) => player.name,
+);
+
 export const moneySelector = createSelector(
   playerSelector,
   (player) => player.money,

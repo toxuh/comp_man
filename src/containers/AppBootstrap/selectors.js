@@ -1,15 +1,10 @@
 import { createSelector } from 'reselect';
 
-import { STORE_SLICE_NAME } from '../PlayerPanel/constants';
-
 import uiRootSelector from '../uiRootSelector';
 
-export const playerSelector = createSelector(
-  uiRootSelector,
-  (uiRoot) => uiRoot[STORE_SLICE_NAME],
-);
+export const gameSelector = createSelector(uiRootSelector, (uiRoot) => uiRoot);
 
-export const playerNameSelector = createSelector(
-  playerSelector,
-  (player) => player.name,
+export const agreedSelector = createSelector(
+  gameSelector,
+  (game) => game.agreed,
 );

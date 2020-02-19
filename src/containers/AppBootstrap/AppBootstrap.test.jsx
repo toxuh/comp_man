@@ -9,19 +9,12 @@ jest.mock('react-redux', () => ({
     // First render
     .mockReturnValueOnce(null)
     // Render with player name
-    .mockResolvedValueOnce('Player Name'),
+    .mockResolvedValueOnce('Player Name')
+    .mockResolvedValueOnce('Is player agreed'),
 }));
 
 describe('<AppBootstrap />', () => {
-  it('renders first screen', () => {
-    expect.assertions(1);
-
-    const wrapper = shallow(<AppBootstrap>Welcome</AppBootstrap>);
-
-    expect(wrapper).toMatchInlineSnapshot(`<IntroduceScreen />`);
-  });
-
-  it('renders with player name', () => {
+  it('renders introduce screen', () => {
     expect.assertions(1);
 
     const wrapper = shallow(<AppBootstrap>Welcome</AppBootstrap>);
@@ -31,10 +24,26 @@ describe('<AppBootstrap />', () => {
         <HelmetWrapper
           defer={true}
           encodeSpecialCharacters={true}
-          title="Computer man [object Promise]"
+          title="Computer man null"
         />
         Welcome
       </Fragment>
     `);
+  });
+
+  it('renders agree screen', () => {
+    expect.assertions(1);
+
+    const wrapper = shallow(<AppBootstrap>Play and Enjoy</AppBootstrap>);
+
+    expect(wrapper).toMatchInlineSnapshot(`<AgreeScreen />`);
+  });
+
+  it('renders with player name', () => {
+    expect.assertions(1);
+
+    const wrapper = shallow(<AppBootstrap>Game</AppBootstrap>);
+
+    expect(wrapper).toMatchInlineSnapshot(`<IntroduceScreen />`);
   });
 });

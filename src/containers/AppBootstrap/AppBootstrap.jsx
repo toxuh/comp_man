@@ -4,20 +4,26 @@ import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 import Helmet from 'react-helmet';
 
-import { playerNameSelector } from './selectors';
-
-import messages from './messages';
-
+import AgreeScreen from './AgreeScreen';
 import IntroduceScreen from './IntroduceScreen';
+import messages from './messages';
+import { agreedSelector } from './selectors';
+
+import { playerNameSelector } from '../PlayerPanel/selectors';
 
 const AppBootstrap = (props) => {
   const intl = useIntl();
   const { children } = props;
 
   const playerName = useSelector(playerNameSelector);
+  const isAgreed = useSelector(agreedSelector);
 
-  if (!playerName) {
+  if (!playerName && !isAgreed) {
     return <IntroduceScreen />;
+  }
+
+  if (playerName && !isAgreed) {
+    return <AgreeScreen />;
   }
 
   return (

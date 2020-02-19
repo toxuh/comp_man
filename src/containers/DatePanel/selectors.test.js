@@ -43,4 +43,14 @@ describe('~/containers/DatePanel/selectors', () => {
       );
     });
   });
+
+  describe('isCountingSelector', () => {
+    it('selects `.counting`', () => {
+      expect.assertions(1);
+
+      expect(selectors.isCountingSelector(state)).toStrictEqual(
+        state[ROOT][DATE_PANEL].counting,
+      );
+    });
+  });
 });
