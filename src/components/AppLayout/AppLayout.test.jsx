@@ -8,6 +8,7 @@ const props = {
   computerPanel: <div>Computer panel</div>,
   softPanel: <div>Software panel</div>,
   datePanel: <div>Date panel</div>,
+  workPanel: <div>Work panel</div>,
 };
 
 describe('<AppLayout />', () => {
@@ -36,6 +37,11 @@ describe('<AppLayout />', () => {
         softPanel={
           <div>
             Software panel
+          </div>
+        }
+        workPanel={
+          <div>
+            Work panel
           </div>
         }
       >
@@ -95,6 +101,9 @@ describe('<AppLayout />', () => {
                   >
                     <div>
                       Date panel
+                    </div>
+                    <div>
+                      Work panel
                     </div>
                   </div>
                 </Col>
