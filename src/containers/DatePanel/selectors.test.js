@@ -7,8 +7,9 @@ import { STORE_SLICE_NAME as ROOT } from '../constants';
 const state = {
   [ROOT]: {
     [DATE_PANEL]: {
-      date: '01.01.1998',
-      time: 9,
+      date:
+        'Thu Jan 01 1998 09:00:00 GMT+0100 (Central European Standard Time)',
+      counting: false,
     },
   },
 };
@@ -24,23 +25,29 @@ describe('~/containers/DatePanel/selectors', () => {
     });
   });
 
-  describe('dateSelector', () => {
+  describe('dateFullSelector', () => {
     it('selects `.date`', () => {
       expect.assertions(1);
 
-      expect(selectors.dateSelector(state)).toStrictEqual(
+      expect(selectors.dateFullSelector(state)).toStrictEqual(
         state[ROOT][DATE_PANEL].date,
       );
     });
   });
 
-  describe('timeSelector', () => {
-    it('selects `.time`', () => {
+  describe('dateSelector', () => {
+    it('selects `1.1.1998` from full date', () => {
       expect.assertions(1);
 
-      expect(selectors.timeSelector(state)).toStrictEqual(
-        state[ROOT][DATE_PANEL].time,
-      );
+      expect(selectors.dateSelector(state)).toStrictEqual('1.1.1998');
+    });
+  });
+
+  describe('timeSelector', () => {
+    it('selects `9` from full date', () => {
+      expect.assertions(1);
+
+      expect(selectors.timeSelector(state)).toStrictEqual(9);
     });
   });
 

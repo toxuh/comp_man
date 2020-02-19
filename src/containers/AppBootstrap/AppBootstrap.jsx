@@ -1,22 +1,19 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 import Helmet from 'react-helmet';
 
 import AgreeScreen from './AgreeScreen';
 import IntroduceScreen from './IntroduceScreen';
-import messages from './messages';
-import { agreedSelector } from './selectors';
 
-import { playerNameSelector } from '../PlayerPanel/selectors';
+import useAppBootstrap from './useAppBootstrap';
+
+import messages from './messages';
 
 const AppBootstrap = (props) => {
   const intl = useIntl();
   const { children } = props;
-
-  const playerName = useSelector(playerNameSelector);
-  const isAgreed = useSelector(agreedSelector);
+  const { playerName, isAgreed, startTimer } = useAppBootstrap();
 
   if (!playerName && !isAgreed) {
     return <IntroduceScreen />;
@@ -25,6 +22,8 @@ const AppBootstrap = (props) => {
   if (playerName && !isAgreed) {
     return <AgreeScreen />;
   }
+
+  startTimer();
 
   return (
     <>

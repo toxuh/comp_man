@@ -75,7 +75,7 @@ describe('~/containers/AppBootstrap/actions', () => {
             "date": "01.01.1998",
             "time": 10,
           },
-          "type": "RESET_GAME",
+          "type": "UPDATE_DATE",
         }
       `);
     });

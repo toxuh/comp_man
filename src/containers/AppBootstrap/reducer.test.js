@@ -104,8 +104,8 @@ describe('~/containers/AppBootstrap/reducer', () => {
     expect.assertions(1);
 
     const newDate = {
-      date: '01.01.1998',
-      time: 10,
+      date:
+        'Thu Jan 01 1998 10:00:00 GMT+0100 (Central European Standard Time)',
     };
     const action = actions.updateDate(newDate);
 
@@ -113,7 +113,10 @@ describe('~/containers/AppBootstrap/reducer', () => {
       stateBefore: initialState,
       stateAfter: {
         ...initialState,
-        date: newDate,
+        date: {
+          ...initialState.date,
+          date: newDate.date,
+        },
       },
       action,
       reducer,

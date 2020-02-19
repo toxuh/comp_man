@@ -1,20 +1,19 @@
 const HOUR_DURATION = 1000; // In milliseconds
 
-const counter = (currentDate, currentTime, isCounting) => {
-  const date = new Date(currentDate);
-  let time = currentTime;
-  const interval = setInterval(() => {
-    time += 1;
-  }, HOUR_DURATION);
+const counter = (currentDate, isCounting) => {
+  return new Promise((resolve) => {
+    const date = new Date(currentDate);
 
-  if (!isCounting) {
-    clearInterval(interval);
-  }
+    setTimeout(() => {
+      if (isCounting) {
+        date.setTime(date.getTime() + 60 * 60 * 1000);
+      }
 
-  return {
-    date,
-    time,
-  };
+      resolve({
+        date: date.toString(),
+      });
+    }, HOUR_DURATION);
+  });
 };
 
 export default counter;

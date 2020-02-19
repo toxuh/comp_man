@@ -27,8 +27,7 @@ export const initialState = {
     other: 0,
   },
   date: {
-    date: '01.01.1998',
-    time: 9,
+    date: 'Thu Jan 01 1998 09:00:00 GMT+0100 (Central European Standard Time)',
     counting: false,
   },
   work: {},
@@ -65,7 +64,12 @@ export default (state = initialState, action) =>
       }
 
       case types.UPDATE_DATE: {
-        draft.date = payload;
+        const { date } = payload;
+
+        draft.date = {
+          ...draft.date,
+          date,
+        };
 
         break;
       }

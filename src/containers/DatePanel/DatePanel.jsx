@@ -1,13 +1,15 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
 
-import { dateSelector, timeSelector } from './selectors';
+import useDatePanel from '~/containers/DatePanel/useDatePanel';
 
 import { DatePanel as DatePanelComponent } from '~/components';
 
 const DatePanel = () => {
-  const date = useSelector(dateSelector);
-  const time = useSelector(timeSelector);
+  const { date, time, updateTime } = useDatePanel();
+
+  useEffect(() => {
+    updateTime();
+  }, [date, time, updateTime]);
 
   return <DatePanelComponent date={date} time={time} />;
 };

@@ -15,6 +15,7 @@ describe('<IntroduceScreen />', () => {
 
     expect(wrapper).toMatchInlineSnapshot(`
       <Container
+        className="AgreeScreen"
         fluid={true}
       >
         <ForwardRef

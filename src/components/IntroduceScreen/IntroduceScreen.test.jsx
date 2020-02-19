@@ -15,6 +15,7 @@ describe('<IntroduceScreen />', () => {
 
     expect(wrapper).toMatchInlineSnapshot(`
       <Form
+        className="IntroduceScreen"
         inline={false}
       >
         <ForwardRef

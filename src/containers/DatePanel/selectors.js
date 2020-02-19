@@ -9,15 +9,22 @@ export const allDateSelector = createSelector(
   (uiRoot) => uiRoot[STORE_SLICE_NAME],
 );
 
-export const dateSelector = createSelector(
+export const dateFullSelector = createSelector(
   allDateSelector,
   (date) => date.date,
 );
 
-export const timeSelector = createSelector(
-  allDateSelector,
-  (date) => date.time,
-);
+export const dateSelector = createSelector(dateFullSelector, (date) => {
+  const d = new Date(date);
+
+  return `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()}`;
+});
+
+export const timeSelector = createSelector(dateFullSelector, (date) => {
+  const d = new Date(date);
+
+  return d.getHours();
+});
 
 export const isCountingSelector = createSelector(
   allDateSelector,
