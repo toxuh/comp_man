@@ -4,8 +4,8 @@ import { shallow } from 'enzyme';
 import DatePanel from './DatePanel';
 
 const props = {
-  position: 'Unemployed',
-  salary: 0,
+  date: '14.03.1998',
+  time: 14,
 };
 
 describe('<DatePanel />', () => {
@@ -20,11 +20,13 @@ describe('<DatePanel />', () => {
       >
         <div
           className="DatePanel__field Date"
-        />
+        >
+          14.03.1998
+        </div>
         <div
           className="DatePanel__field Time"
         >
-          undefined:00
+          14:00
         </div>
       </div>
     `);

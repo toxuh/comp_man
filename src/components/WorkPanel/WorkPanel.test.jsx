@@ -4,8 +4,8 @@ import { shallow } from 'enzyme';
 import WorkPanel from './WorkPanel';
 
 const props = {
-  date: '14.03.1998',
-  time: 14,
+  position: 'Unemployed',
+  salary: 0,
 };
 
 describe('<DatePanel />', () => {
@@ -26,7 +26,9 @@ describe('<DatePanel />', () => {
         <div
           className="WorkPanel__field"
         >
+          Unemployed
            /
+          0
           $
           <span
             className="WorkPanel__description"
