@@ -11,3 +11,7 @@ body {
   justify-content: center;
   width: 100vw;
 }
+
+.col {
+  position: static !important;
+}

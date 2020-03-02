@@ -1,37 +1,80 @@
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 const useActionsPanel = () => {
-  const handleComputerClick = useCallback(() => {
-    alert('Computer clicked!');
+  const [computerModal, toggleComputerModal] = useState(false);
+  const [softwareModal, toggleSoftwareModal] = useState(false);
+  const [hackingModal, toggleHackingModal] = useState(false);
+  const [bbsModal, toggleBbsModal] = useState(false);
+  const [jobModal, toggleJobModal] = useState(false);
+  const [entertainmentModal, toggleEntertainmentModal] = useState(false);
+
+  const handleComputerModalOpen = useCallback(() => {
+    toggleComputerModal(true);
   }, []);
 
-  const handleSoftwareClick = useCallback(() => {
-    alert('Software clicked!');
+  const handleComputerModalClose = useCallback(() => {
+    toggleComputerModal(false);
   }, []);
 
-  const handleHackingClick = useCallback(() => {
-    alert('Hacking clicked!');
+  const handleSoftwareModalOpen = useCallback(() => {
+    toggleSoftwareModal(true);
   }, []);
 
-  const handleBbsClick = useCallback(() => {
-    alert('BBS clicked!');
+  const handleSoftwareModalClose = useCallback(() => {
+    toggleSoftwareModal(false);
   }, []);
 
-  const handleJobClick = useCallback(() => {
-    alert('Job clicked!');
+  const handleHackingModalOpen = useCallback(() => {
+    toggleHackingModal(true);
   }, []);
 
-  const handleEntertainmentClick = useCallback(() => {
-    alert('Entertainment clicked!');
+  const handleHackingModalClose = useCallback(() => {
+    toggleHackingModal(false);
+  }, []);
+
+  const handleBbsModalOpen = useCallback(() => {
+    toggleBbsModal(true);
+  }, []);
+
+  const handleBbsModalClose = useCallback(() => {
+    toggleBbsModal(false);
+  }, []);
+
+  const handleJobModalOpen = useCallback(() => {
+    toggleJobModal(true);
+  }, []);
+
+  const handleJobModalClose = useCallback(() => {
+    toggleJobModal(false);
+  }, []);
+
+  const handleEntertainmentModalOpen = useCallback(() => {
+    toggleEntertainmentModal(true);
+  }, []);
+
+  const handleEntertainmentModalClose = useCallback(() => {
+    toggleEntertainmentModal(false);
   }, []);
 
   return {
-    handleComputerClick,
-    handleSoftwareClick,
-    handleHackingClick,
-    handleBbsClick,
-    handleJobClick,
-    handleEntertainmentClick,
+    computerModal,
+    handleComputerModalOpen,
+    handleComputerModalClose,
+    softwareModal,
+    handleSoftwareModalOpen,
+    handleSoftwareModalClose,
+    hackingModal,
+    handleHackingModalOpen,
+    handleHackingModalClose,
+    bbsModal,
+    handleBbsModalOpen,
+    handleBbsModalClose,
+    jobModal,
+    handleJobModalOpen,
+    handleJobModalClose,
+    entertainmentModal,
+    handleEntertainmentModalOpen,
+    handleEntertainmentModalClose,
   };
 };
 

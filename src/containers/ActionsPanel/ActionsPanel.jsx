@@ -5,47 +5,86 @@ import useActionsPanel from './useActionsPanel';
 
 import messages from './messages';
 
-import { ActionsPanel as ActionsPanelComponent } from '~/components';
+import {
+  ActionsPanel as ActionsPanelComponent,
+  BbsModal,
+  ComputerModal,
+  EntertainmentModal,
+  HackingModal,
+  JobModal,
+  SoftwareModal,
+} from '~/components';
 
 const ActionsPanel = () => {
   const intl = useIntl();
   const {
-    handleComputerClick,
-    handleSoftwareClick,
-    handleHackingClick,
-    handleBbsClick,
-    handleJobClick,
-    handleEntertainmentClick,
+    computerModal,
+    handleComputerModalOpen,
+    handleComputerModalClose,
+    softwareModal,
+    handleSoftwareModalOpen,
+    handleSoftwareModalClose,
+    hackingModal,
+    handleHackingModalOpen,
+    handleHackingModalClose,
+    bbsModal,
+    handleBbsModalOpen,
+    handleBbsModalClose,
+    jobModal,
+    handleJobModalOpen,
+    handleJobModalClose,
+    entertainmentModal,
+    handleEntertainmentModalOpen,
+    handleEntertainmentModalClose,
   } = useActionsPanel();
 
   const items = [
     {
       name: intl.formatMessage(messages.computer),
-      handleClick: handleComputerClick,
+      handleClick: handleComputerModalOpen,
     },
     {
       name: intl.formatMessage(messages.software),
-      handleClick: handleSoftwareClick,
+      handleClick: handleSoftwareModalOpen,
     },
     {
       name: intl.formatMessage(messages.hacking),
-      handleClick: handleHackingClick,
+      handleClick: handleHackingModalOpen,
     },
     {
       name: intl.formatMessage(messages.bbs),
-      handleClick: handleBbsClick,
+      handleClick: handleBbsModalOpen,
     },
     {
       name: intl.formatMessage(messages.job),
-      handleClick: handleJobClick,
+      handleClick: handleJobModalOpen,
     },
     {
       name: intl.formatMessage(messages.entertainment),
-      handleClick: handleEntertainmentClick,
+      handleClick: handleEntertainmentModalOpen,
     },
   ];
 
-  return <ActionsPanelComponent items={items} />;
+  return (
+    <>
+      <ComputerModal
+        isShown={computerModal}
+        onClose={handleComputerModalClose}
+      />
+      <SoftwareModal
+        isShown={softwareModal}
+        onClose={handleSoftwareModalClose}
+      />
+      <HackingModal isShown={hackingModal} onClose={handleHackingModalClose} />
+      <BbsModal isShown={bbsModal} onClose={handleBbsModalClose} />
+      <JobModal isShown={jobModal} onClose={handleJobModalClose} />
+      <EntertainmentModal
+        isShown={entertainmentModal}
+        onClose={handleEntertainmentModalClose}
+      />
+      <ActionsPanelComponent items={items} />
+    </>
+  );
 };
 
 export default ActionsPanel;
