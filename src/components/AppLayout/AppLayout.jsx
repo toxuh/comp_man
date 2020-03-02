@@ -9,6 +9,7 @@ const AppLayout = (props) => {
     actionsPanel,
     computerPanel,
     datePanel,
+    newsPanel,
     playerPanel,
     softPanel,
     workPanel,
@@ -26,6 +27,7 @@ const AppLayout = (props) => {
           {datePanel}
           {workPanel}
           {actionsPanel}
+          {newsPanel}
         </Col>
       </Row>
     </Container>
@@ -39,6 +41,7 @@ AppLayout.propTypes = {
   datePanel: PropTypes.node.isRequired,
   workPanel: PropTypes.node.isRequired,
   actionsPanel: PropTypes.node.isRequired,
+  newsPanel: PropTypes.node.isRequired,
 };
 
 export default AppLayout;

@@ -18,6 +18,7 @@ describe('<App />', () => {
             actionsPanel={<ActionsPanel />}
             computerPanel={<ComputerPanel />}
             datePanel={<DatePanel />}
+            newsPanel={<NewsPanel />}
             playerPanel={<PlayerPanel />}
             softPanel={<SoftPanel />}
             workPanel={<WorkPanel />}

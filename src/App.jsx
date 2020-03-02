@@ -5,6 +5,7 @@ import {
   AppBootstrap,
   ComputerPanel,
   DatePanel,
+  NewsPanel,
   PlayerPanel,
   SoftPanel,
   WorkPanel,
@@ -20,6 +21,7 @@ const App = () => {
   const datePanel = <DatePanel />;
   const workPanel = <WorkPanel />;
   const actionsPanel = <ActionsPanel />;
+  const newsPanel = <NewsPanel />;
 
   return (
     <div className="App">
@@ -31,6 +33,7 @@ const App = () => {
           computerPanel={computerPanel}
           softPanel={softPanel}
           workPanel={workPanel}
+          newsPanel={newsPanel}
         />
       </AppBootstrap>
     </div>

@@ -39,21 +39,21 @@ describe('<Modal />', () => {
         <Button
           active={false}
           disabled={false}
-          onClick={[MockFunction]}
+          onClick={[Function]}
           type="button"
           variant="primary"
         >
           <button
             className="btn btn-primary"
             disabled={false}
-            onClick={[MockFunction]}
+            onClick={[Function]}
             type="button"
           >
             Open modal
           </button>
         </Button>
         <Bootstrap(Modal)
-          onHide={[MockFunction]}
+          onHide={[Function]}
           show={false}
         >
           <Modal
@@ -82,7 +82,7 @@ describe('<Modal />', () => {
                 "scrollbarSize": 0,
               }
             }
-            onHide={[MockFunction]}
+            onHide={[Function]}
             restoreFocus={true}
             show={false}
           >
@@ -110,7 +110,7 @@ describe('<Modal />', () => {
               onEnter={[Function]}
               onEntering={[Function]}
               onExited={[Function]}
-              onHide={[MockFunction]}
+              onHide={[Function]}
               onMouseUp={[Function]}
               renderBackdrop={[Function]}
               restoreFocus={true}
@@ -143,7 +143,7 @@ describe('<Modal />', () => {
                 onEnter={[Function]}
                 onEntering={[Function]}
                 onExited={[Function]}
-                onHide={[MockFunction]}
+                onHide={[Function]}
                 onMouseUp={[Function]}
                 renderBackdrop={[Function]}
                 restoreFocus={true}

@@ -10,6 +10,7 @@ const props = {
   datePanel: <div>Date panel</div>,
   workPanel: <div>Work panel</div>,
   actionsPanel: <div>Actions panel</div>,
+  newsPanel: <div>News panel</div>,
 };
 
 describe('<AppLayout />', () => {
@@ -33,6 +34,11 @@ describe('<AppLayout />', () => {
         datePanel={
           <div>
             Date panel
+          </div>
+        }
+        newsPanel={
+          <div>
+            News panel
           </div>
         }
         playerPanel={
@@ -113,6 +119,9 @@ describe('<AppLayout />', () => {
                     </div>
                     <div>
                       Actions panel
+                    </div>
+                    <div>
+                      News panel
                     </div>
                   </div>
                 </Col>

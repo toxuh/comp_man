@@ -5,6 +5,7 @@ import DatePanel from './DatePanel/DatePanel';
 import Dictionary from './Dictionary/Dictionary';
 import IntroduceScreen from './IntroduceScreen/IntroduceScreen';
 import Modal from './Modal/Modal';
+import NewsPanel from './NewsPanel/NewsPanel';
 import Panel from './Panel/Panel';
 import WorkPanel from './WorkPanel/WorkPanel';
 
@@ -15,6 +16,7 @@ export {
   DatePanel,
   Dictionary,
   IntroduceScreen,
+  NewsPanel,
   Modal,
   Panel,
   WorkPanel,

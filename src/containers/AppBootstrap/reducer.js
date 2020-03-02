@@ -34,6 +34,9 @@ export const initialState = {
     position: 0,
     salary: 0,
   },
+  news: {
+    data: '',
+  },
 };
 
 export default (state = initialState, action) =>

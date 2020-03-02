@@ -5,7 +5,7 @@ import ActionsPanel from './ActionsPanel/ActionsPanel';
 import AppBootstrap from './AppBootstrap/AppBootstrap';
 import ComputerPanel from './ComputerPanel/ComputerPanel';
 import DatePanel from './DatePanel/DatePanel';
-import Modal from './Modal/Modal';
+import NewsPanel from './NewsPanel/NewsPanel';
 import PlayerPanel from './PlayerPanel/PlayerPanel';
 import SoftPanel from './SoftPanel/SoftPanel';
 import WorkPanel from './WorkPanel/WorkPanel';
@@ -17,7 +17,7 @@ export {
   AppBootstrap,
   ComputerPanel,
   DatePanel,
-  Modal,
+  NewsPanel,
   PlayerPanel,
   SoftPanel,
   WorkPanel,

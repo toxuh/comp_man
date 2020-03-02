@@ -1,0 +1,10 @@
+.NewsPanel {
+  background-color: #fff;
+  box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.3);
+  color: #77343d;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-top: 4px;
+  padding: 0.5rem 0.7rem;
+}
