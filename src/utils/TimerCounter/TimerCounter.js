@@ -1,6 +1,6 @@
-const HOUR_DURATION = 1000; // In milliseconds
+import { HOUR_DURATION } from '~/constants';
 
-const counter = (currentDate, isCounting) => {
+const TimerCounter = (currentDate, isCounting) => {
   return new Promise((resolve) => {
     const date = new Date(currentDate);
 
@@ -16,4 +16,4 @@ const counter = (currentDate, isCounting) => {
   });
 };
 
-export default counter;
+export default TimerCounter;

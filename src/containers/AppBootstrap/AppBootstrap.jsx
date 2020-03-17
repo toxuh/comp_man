@@ -3,24 +3,29 @@ import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 import Helmet from 'react-helmet';
 
-import AgreeScreen from './AgreeScreen';
-import IntroduceScreen from './IntroduceScreen';
-
 import useAppBootstrap from './useAppBootstrap';
 
 import messages from './messages';
 
+import { AgreeModal, IntroduceModal } from '~/components';
+
 const AppBootstrap = (props) => {
   const intl = useIntl();
   const { children } = props;
-  const { playerName, isAgreed, startTimer } = useAppBootstrap();
+  const {
+    handleAgreeChange,
+    handlePlayerNameChange,
+    playerName,
+    isAgreed,
+    startTimer,
+  } = useAppBootstrap();
 
   if (!playerName && !isAgreed) {
-    return <IntroduceScreen />;
+    return <IntroduceModal handlePlayerNameChange={handlePlayerNameChange} />;
   }
 
   if (playerName && !isAgreed) {
-    return <AgreeScreen />;
+    return <AgreeModal handleAgreeChange={handleAgreeChange} />;
   }
 
   startTimer();

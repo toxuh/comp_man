@@ -1,0 +1,61 @@
+.IntroduceModal {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  width: 310px;
+}
+
+.IntroduceModal img {
+  height: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.IntroduceModal__label {
+  font-weight: 700;
+  padding-right: 0 !important;
+}
+
+.IntroduceModal__input {
+  background: #c1c1c1 !important;
+  border: 1px solid #dadada !important;
+  border-radius: 0 !important;
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.4);
+  color: #152598 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  height: 25px !important;
+  padding: 0 3px !important;
+}
+
+.IntroduceModal__input:focus,
+.IntroduceModal__input:active {
+  border: 1px solid #dadada !important;
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.4) !important;
+  outline: 0;
+}
+
+.IntroduceModal__buttonHolder {
+  text-align: center;
+}
+
+.IntroduceModal__button {
+  background: #dadada !important;
+  border: 1px solid #dadada !important;
+  border-radius: 0 !important;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+  color: inherit !important;
+  cursor: default !important;
+  font-weight: 700 !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.IntroduceModal__button:active {
+  border: 1px solid #dadada !important;
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.4) !important;
+  outline: 0;
+}
+
+.IntroduceModal__button:focus {
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4) !important;
+}

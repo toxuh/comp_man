@@ -2,13 +2,13 @@ import reducer, { initialState } from './reducer';
 
 import * as actions from './actions';
 
-import { testReducer } from '~/utils';
+import { TestReducer } from '~/utils';
 
 describe('~/containers/AppBootstrap/reducer', () => {
   it('returns the initial state', () => {
     expect.assertions(1);
 
-    const { received, expected } = testReducer({
+    const { received, expected } = TestReducer({
       stateBefore: undefined,
       stateAfter: initialState,
       action: {},
@@ -24,7 +24,7 @@ describe('~/containers/AppBootstrap/reducer', () => {
     const playerName = 'Player name';
     const action = actions.changePlayerName(playerName);
 
-    const { received, expected } = testReducer({
+    const { received, expected } = TestReducer({
       stateBefore: initialState,
       stateAfter: {
         ...initialState,
@@ -45,7 +45,7 @@ describe('~/containers/AppBootstrap/reducer', () => {
 
     const action = actions.agree();
 
-    const { received, expected } = testReducer({
+    const { received, expected } = TestReducer({
       stateBefore: initialState,
       stateAfter: {
         ...initialState,
@@ -63,7 +63,7 @@ describe('~/containers/AppBootstrap/reducer', () => {
 
     const action = actions.timeStart();
 
-    const { received, expected } = testReducer({
+    const { received, expected } = TestReducer({
       stateBefore: initialState,
       stateAfter: {
         ...initialState,
@@ -84,7 +84,7 @@ describe('~/containers/AppBootstrap/reducer', () => {
 
     const action = actions.timeStop();
 
-    const { received, expected } = testReducer({
+    const { received, expected } = TestReducer({
       stateBefore: initialState,
       stateAfter: {
         ...initialState,
@@ -109,7 +109,7 @@ describe('~/containers/AppBootstrap/reducer', () => {
     };
     const action = actions.updateDate(newDate);
 
-    const { received, expected } = testReducer({
+    const { received, expected } = TestReducer({
       stateBefore: initialState,
       stateAfter: {
         ...initialState,

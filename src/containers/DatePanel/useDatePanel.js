@@ -10,7 +10,7 @@ import {
 
 import { updateDate } from '../AppBootstrap/actions';
 
-import counter from '~/utils/Timer/timerCounter';
+import { TimerCounter } from '~/utils';
 
 const useDatePanel = () => {
   const dispatch = useDispatch();
@@ -21,7 +21,7 @@ const useDatePanel = () => {
   const time = useSelector(timeSelector);
 
   const updateTime = useCallback(async () => {
-    const currentDate = await counter(dateFull, isCounting);
+    const currentDate = await TimerCounter(dateFull, isCounting);
 
     dispatch(updateDate(currentDate));
   }, [dateFull, dispatch, isCounting]);

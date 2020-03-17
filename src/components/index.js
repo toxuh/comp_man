@@ -1,23 +1,23 @@
 import ActionsPanel from './ActionsPanel/ActionsPanel';
-import AgreeScreen from './AgreeScreen/AgreeScreen';
+import AgreeModal from './Modals/AgreeModal';
 import AppLayout from './AppLayout/AppLayout';
-import BbsModal from './Modal/BbsModal';
-import ComputerModal from './Modal/ComputerModal';
+import BbsModal from './Modals/BbsModal';
+import ComputerModal from './Modals/ComputerModal';
 import DatePanel from './DatePanel/DatePanel';
 import Dictionary from './Dictionary/Dictionary';
-import EntertainmentModal from './Modal/EntertainmentModal';
-import HackingModal from './Modal/HackingModal';
-import IntroduceScreen from './IntroduceScreen/IntroduceScreen';
-import JobModal from './Modal/JobModal';
-import Modal from './Modal/Modal';
+import EntertainmentModal from './Modals/EntertainmentModal';
+import HackingModal from './Modals/HackingModal';
+import IntroduceModal from './Modals/IntroduceModal';
+import JobModal from './Modals/JobModal';
+import Modal from './Modals/Modal';
 import NewsPanel from './NewsPanel/NewsPanel';
 import Panel from './Panel/Panel';
-import SoftwareModal from './Modal/SoftwareModal';
+import SoftwareModal from './Modals/SoftwareModal';
 import WorkPanel from './WorkPanel/WorkPanel';
 
 export {
   ActionsPanel,
-  AgreeScreen,
+  AgreeModal,
   AppLayout,
   BbsModal,
   ComputerModal,
@@ -25,7 +25,7 @@ export {
   Dictionary,
   EntertainmentModal,
   HackingModal,
-  IntroduceScreen,
+  IntroduceModal,
   JobModal,
   NewsPanel,
   Modal,

@@ -1,0 +1,49 @@
+.AgreeModal {
+  font-weight: 700;
+  max-width: 377px;
+}
+
+.AgreeModal__textHolder {
+  background: #dadada;
+  border: 1px solid #dadada;
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.AgreeModal__heading {
+  color: #152598;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+}
+
+.AgreeModal__buttonHolder {
+  text-align: center;
+}
+
+.AgreeModal__button {
+  background: #dadada !important;
+  border: 1px solid #dadada !important;
+  border-radius: 0 !important;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+  color: inherit !important;
+  cursor: default !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.AgreeModal__button:active {
+  border: 1px solid #dadada !important;
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.4) !important;
+  outline: 0;
+}
+
+.AgreeModal__button:focus {
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4) !important;
+}

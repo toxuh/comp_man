@@ -1,6 +1,7 @@
+/* eslint-disable-next-line */
 import deepFreeze from 'deep-freeze';
 
-const testReducer = ({ stateBefore, stateAfter, action, reducer }) => {
+const TestReducer = ({ stateBefore, stateAfter, action, reducer }) => {
   deepFreeze(action);
   deepFreeze(stateAfter);
 
@@ -10,4 +11,4 @@ const testReducer = ({ stateBefore, stateAfter, action, reducer }) => {
   };
 };
 
-export default testReducer;
+export default TestReducer;

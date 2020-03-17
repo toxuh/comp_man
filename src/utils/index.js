@@ -1,3 +1,4 @@
-import testReducer from './tests/testReducer';
+import TestReducer from './TestReducer/TestReducer';
+import TimerCounter from './TimerCounter/TimerCounter';
 
-export { testReducer };
+export { TestReducer, TimerCounter };

@@ -14,9 +14,6 @@
   },
   "license": "MIT",
   "author": "Anton Zakharov <zakharov.toxa@gmail.com> (https://github.com/toxuh)",
-  "contributors": [
-    "Yuri Dushenko (https://github.com/Dushenko)"
-  ],
   "private": false,
   "dependencies": {
     "@formatjs/intl-pluralrules": "^1.5.0",
