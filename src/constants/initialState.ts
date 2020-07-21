@@ -18,6 +18,6 @@ export const userState: Player = {
   mood: DEFAULT_USER_MOOD,
 };
 export const dateState: Date = {
-  date: DEFAULT_DATE,
+  gameDate: DEFAULT_DATE,
   isCounting: false,
 };

@@ -9,11 +9,6 @@ export type Player = {
 };
 
 export type Date = {
-  date: string;
+  gameDate: string;
   isCounting: boolean;
-};
-
-export type Panel = {
-  header?: string;
-  fields: { name: string; value: number | string }[];
 };
