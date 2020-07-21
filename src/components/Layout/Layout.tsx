@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import './Layout.css';
 
@@ -8,11 +8,7 @@ type Layout = {
 };
 
 const Layout: React.FC<Layout> = ({ children }) => {
-  return (
-    <Container className="Layout">
-      <Row>{children}</Row>
-    </Container>
-  );
+  return <Container className="Layout">{children}</Container>;
 };
 
 export default Layout;

@@ -1,0 +1,32 @@
+.Panel {
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 3px 0;
+  outline: 2px solid #c1c1c1;
+  outline-offset: -7px;
+  overflow: hidden;
+  padding: 15px 13px 10px;
+  position: relative;
+}
+
+.Panel__header {
+  background: #fff;
+  color: #5c4ba1;
+  display: inline-block;
+  left: 10px;
+  padding: 0 3px;
+  position: absolute;
+  top: -4px;
+}
+
+.Panel__field {
+  margin: 0;
+  position: relative;
+}
+
+.Panel__field > span {
+  color: #b41bc6;
+  position: absolute;
+  right: 0;
+}

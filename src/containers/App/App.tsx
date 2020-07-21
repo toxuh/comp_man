@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Main from '../Main/Main';
+
 import { Layout } from '../../components';
 
 import './App.css';
@@ -7,7 +9,7 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <Layout>
-      <h1>Hello world!</h1>
+      <Main />
     </Layout>
   );
 };
