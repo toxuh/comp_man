@@ -8,7 +8,11 @@ type Layout = {
 };
 
 const Layout: React.FC<Layout> = ({ children }) => {
-  return <Container className="Layout">{children}</Container>;
+  return (
+    <div className="Layout">
+      <Container className="Layout__Container">{children}</Container>
+    </div>
+  );
 };
 
 export default Layout;

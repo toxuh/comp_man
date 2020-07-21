@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Main from '../Main/Main';
 
-import { Layout } from '../../components';
+import { AgreeScreen, Layout, WelcomeScreen } from '../../components';
 
-import './App.css';
+import { agreedState, playerNameState } from '../../constants/initialState';
 
 const App: React.FC = () => {
+  const [isAgreed, setAgreed] = useState(agreedState);
+  const [playerName, setPlayerName] = useState(playerNameState);
+
   return (
     <Layout>
-      <Main />
+      {!playerName && !isAgreed && (
+        <WelcomeScreen handleSetPlayerName={setPlayerName} />
+      )}
+      {playerName && !isAgreed && <AgreeScreen handleSetAgree={setAgreed} />}
+      {playerName && isAgreed && <Main />}
     </Layout>
   );
 };

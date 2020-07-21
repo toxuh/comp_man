@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 
 import { Panel } from '../../components';
+
+import { Mood, Status } from '../../constants';
 
 import { Player as PlayerType } from '../../types';
 
 type PlayerProps = {
   player: PlayerType;
+  handleChangePlayerState: Dispatch<SetStateAction<PlayerType>>;
 };
 
 const Player: React.FC<PlayerProps> = ({
@@ -14,10 +17,10 @@ const Player: React.FC<PlayerProps> = ({
   return (
     <Panel
       fields={[
-        { name: 'Деньги', value: `$${money}` },
+        { name: 'Денег', value: `${money}$` },
         { name: 'Очки', value: points },
-        { name: 'Статус', value: status },
-        { name: 'Настроение', value: mood },
+        { name: 'Ваш статус', value: Status[status] },
+        { name: 'Настроение', value: Mood[mood] },
       ]}
     />
   );

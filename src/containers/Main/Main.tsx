@@ -4,22 +4,21 @@ import { Col, Row } from 'react-bootstrap';
 import Date from '../Date/Date';
 import Player from '../Player/Player';
 
-import { agreedState, dateState, userState } from './initialState';
+import { dateState, userState } from '../../constants/initialState';
 
 import './Main.css';
 
 const Main: React.FC = () => {
-  const [isAgreed, setAgreed] = useState(agreedState);
   const [user, setUser] = useState(userState);
   const [date, setDate] = useState(dateState);
 
   return (
     <Row>
       <Col className="Main__col">
-        <Player player={user} />
+        <Player player={user} handleChangePlayerState={setUser} />
       </Col>
       <Col className="Main__col">
-        <Date />
+        <Date date={date} handleChangeDateState={setDate} />
       </Col>
     </Row>
   );

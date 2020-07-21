@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 
-const Date: React.FC = () => {
+import { Date as DateType } from '../../types';
+
+type DateProps = {
+  date: DateType;
+  handleChangeDateState: Dispatch<SetStateAction<DateType>>;
+};
+
+const Date: React.FC<DateProps> = () => {
   return <p>Date</p>;
 };
 
