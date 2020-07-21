@@ -1,6 +1,19 @@
-/coverage
+!.eslintrc.js
+!.prettierrc.js
+!.huskyrc.js
 
-/build
-/.storybook/build
+!**/.babelrc.js
+!**/.storybook
 
-src/serviceWorker.js
+**/node_modules
+
+**/src/serviceWorker.ts
+
+**/coverage
+
+**/build
+**/.storybook/build
+
+**/serviceWorker.js
+
+**/theme

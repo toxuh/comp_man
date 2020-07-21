@@ -1,8 +1,11 @@
-!.babelrc.js
-!.eslintrc.js
-!.prettierrc.js
-!.huskyrc.js
-webpack.config.js
-README.md
+**/.babelrc.js
+**/.storybook
 
-src/serviceWorker.js
+**/node_modules
+
+**/src/serviceWorker.ts
+
+**/coverage
+
+**/build
+**/.storybook/build
