@@ -1,8 +1,0 @@
-!.babelrc.js
-!.eslintrc.js
-!.prettierrc.js
-!.huskyrc.js
-webpack.config.js
-README.md
-
-src/serviceWorker.js
