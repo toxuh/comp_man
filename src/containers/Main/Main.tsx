@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 import Date from '../Date/Date';
 import Player from '../Player/Player';
@@ -13,14 +13,16 @@ const Main: React.FC = () => {
   const [date, setDate] = useState(dateState);
 
   return (
-    <Row>
-      <Col className="Main__col">
-        <Player player={user} handleChangePlayerState={setUser} />
-      </Col>
-      <Col className="Main__col">
-        <Date date={date} handleChangeDateState={setDate} />
-      </Col>
-    </Row>
+    <Container className="Main">
+      <Row>
+        <Col className="Main__col">
+          <Player player={user} handleChangePlayerState={setUser} />
+        </Col>
+        <Col className="Main__col">
+          <Date date={date} handleChangeDateState={setDate} />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

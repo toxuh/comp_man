@@ -1,0 +1,61 @@
+.WelcomeScreen {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  width: 310px;
+}
+
+.WelcomeScreen img {
+  height: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.WelcomeScreen__label {
+  font-weight: 700;
+  padding-right: 0 !important;
+}
+
+.WelcomeScreen__input {
+  background: #c1c1c1 !important;
+  border: 1px solid #dadada !important;
+  border-radius: 0 !important;
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.4);
+  color: #152598 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  height: 25px !important;
+  padding: 0 3px !important;
+}
+
+.WelcomeScreen__input:focus,
+.WelcomeScreen__input:active {
+  border: 1px solid #dadada !important;
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.4) !important;
+  outline: 0;
+}
+
+.WelcomeScreen__buttonHolder {
+  text-align: center;
+}
+
+.WelcomeScreen__button {
+  background: #dadada !important;
+  border: 1px solid #dadada !important;
+  border-radius: 0 !important;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+  color: inherit !important;
+  cursor: default !important;
+  font-weight: 700 !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.WelcomeScreen__button:active {
+  border: 1px solid #dadada !important;
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.4) !important;
+  outline: 0;
+}
+
+.WelcomeScreen__button:focus {
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4) !important;
+}

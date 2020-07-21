@@ -1,3 +1,5 @@
+export const GAME_NAME = 'Компьютерщик';
+
 export const DEFAULT_USER_NAME = undefined;
 export const DEFAULT_USER_MONEY = 60;
 export const DEFAULT_USER_POINTS = 0;
