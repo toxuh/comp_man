@@ -1,4 +1,4 @@
-import { Agreed, Date, Hardware, Player, PlayerName } from '../types';
+import { Agreed, Date, Hardware, Player, PlayerName, Software } from '../types';
 
 import {
   DEFAULT_DATE,
@@ -8,6 +8,11 @@ import {
   DEFAULT_HARDWARE_MEMORY,
   DEFAULT_HARDWARE_MODEM,
   DEFAULT_HARDWARE_SOUND,
+  DEFAULT_SOFTWARE_ANTIVIRUS,
+  DEFAULT_SOFTWARE_BBS,
+  DEFAULT_SOFTWARE_OS,
+  DEFAULT_SOFTWARE_OTHER,
+  DEFAULT_SOFTWARE_PROGRAMMING,
   DEFAULT_USER_MONEY,
   DEFAULT_USER_MOOD,
   DEFAULT_USER_NAME,
@@ -33,4 +38,12 @@ export const hardwareState: Hardware = {
   modem: DEFAULT_HARDWARE_MODEM,
   cd: DEFAULT_HARDWARE_CD,
   sound: DEFAULT_HARDWARE_SOUND,
+};
+
+export const softwareState: Software = {
+  os: DEFAULT_SOFTWARE_OS,
+  antivirus: DEFAULT_SOFTWARE_ANTIVIRUS,
+  programming: DEFAULT_SOFTWARE_PROGRAMMING,
+  bbs: DEFAULT_SOFTWARE_BBS,
+  other: DEFAULT_SOFTWARE_OTHER,
 };

@@ -17,3 +17,11 @@ export type Hardware = {
   cd: number;
   sound: number;
 };
+
+export type Software = {
+  os: number;
+  antivirus: number;
+  programming: number;
+  bbs: number;
+  other: number;
+};

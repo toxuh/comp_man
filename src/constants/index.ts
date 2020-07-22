@@ -17,6 +17,12 @@ export const DEFAULT_HARDWARE_MODEM = 0;
 export const DEFAULT_HARDWARE_CD = 0;
 export const DEFAULT_HARDWARE_SOUND = 0;
 
+export const DEFAULT_SOFTWARE_OS = 0;
+export const DEFAULT_SOFTWARE_ANTIVIRUS = 0;
+export const DEFAULT_SOFTWARE_PROGRAMMING = 0;
+export const DEFAULT_SOFTWARE_BBS = 0;
+export const DEFAULT_SOFTWARE_OTHER = 0;
+
 export enum Mood {
   bad,
   normal,
@@ -68,6 +74,37 @@ export enum CD {
 }
 
 export enum Sound {
+  no,
+  yes,
+}
+
+export enum OS {
+  no,
+  windows3,
+  windows95,
+  windowsNt,
+  os2,
+}
+
+export enum Antivirus {
+  no,
+  yes,
+}
+
+export enum Programming {
+  no,
+  pascal,
+  assembler,
+  visualBasic,
+  delphi,
+}
+
+export enum Bbs {
+  no,
+  yes,
+}
+
+export enum Other {
   no,
   yes,
 }
