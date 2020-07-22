@@ -1,7 +1,25 @@
 {
   "name": "comp_man",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1a",
+  "description": "Веб-версия игры 'Компьютерщик', переписанная на React + Typescript.",
+  "repository": "https://github.com/toxuh/comp_man",
+  "keywords": [
+    "comp man",
+    "game",
+    "computer man",
+    "компьютерщик",
+    "игра",
+    "react",
+    "typescript"
+  ],
+  "homepage": "https://toxuh.github.io/comp_man/",
+  "bugs": {
+    "url": "https://github.com/toxuh/comp_man/issues",
+    "email": "zakharov.toxa@gmail.com"
+  },
+  "license": "MIT",
+  "author": "Anton Zakharov <zakharov.toxa@gmail.com> (https://github.com/toxuh)",
+  "private": false,
   "dependencies": {
     "bootstrap": "^4.5.0",
     "classnames": "^2.2.6",
