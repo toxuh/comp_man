@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 import Actions from '../Actions/Actions';
 import Date from '../Date/Date';
+import Hardware from '../Hardware/Hardware';
 import Player from '../Player/Player';
 
 import './Main.css';
@@ -13,6 +14,7 @@ const Main: React.FC = () => {
       <Row>
         <Col className="Main__col">
           <Player />
+          <Hardware />
         </Col>
         <Col className="Main__col">
           <Date />

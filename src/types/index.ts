@@ -8,3 +8,12 @@ export type Player = {
   status: number;
   mood: number;
 };
+
+export type Hardware = {
+  computer: number;
+  memory: number;
+  disk: number;
+  modem: number;
+  cd: number;
+  sound: number;
+};

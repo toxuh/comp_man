@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import { HOUR_DURATION } from '../../constants';
 import { dateState } from '../../constants/initialState';
 
 import { Date as DateComponent } from '../../components';
@@ -15,7 +16,7 @@ const DateContainer: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setDate(new Date(d.setTime(d.getTime() + 60 * 60 * 1000)).toString());
-    }, 1000);
+    }, HOUR_DURATION);
 
     return () => clearInterval(interval);
   });
