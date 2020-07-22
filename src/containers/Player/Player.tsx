@@ -1,26 +1,21 @@
-import React, { Dispatch, SetStateAction } from 'react';
+import React, { useState } from 'react';
 
 import { Panel } from '../../components';
 
+import { userState } from '../../constants/initialState';
+
 import { Mood, Status } from '../../constants';
 
-import { Player as PlayerType } from '../../types';
+const Player: React.FC = () => {
+  const [user] = useState(userState);
 
-type PlayerProps = {
-  player: PlayerType;
-  handleChangePlayerState: Dispatch<SetStateAction<PlayerType>>;
-};
-
-const Player: React.FC<PlayerProps> = ({
-  player: { money, mood, points, status },
-}) => {
   return (
     <Panel
       fields={[
-        { name: 'Денег', value: `${money}$` },
-        { name: 'Очки', value: points },
-        { name: 'Ваш статус', value: Status[status] },
-        { name: 'Настроение', value: Mood[mood] },
+        { name: 'Денег', value: `${user.money}$` },
+        { name: 'Очки', value: user.points },
+        { name: 'Ваш статус', value: Status[user.status] },
+        { name: 'Настроение', value: Mood[user.mood] },
       ]}
     />
   );

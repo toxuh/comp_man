@@ -1,5 +1,6 @@
 export type Agreed = boolean;
 export type PlayerName = string | undefined;
+export type Date = string;
 
 export type Player = {
   money: number;
@@ -7,5 +8,3 @@ export type Player = {
   status: number;
   mood: number;
 };
-
-export type Date = string;

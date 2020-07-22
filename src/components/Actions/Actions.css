@@ -1,0 +1,20 @@
+.Actions {
+  background-color: #fff;
+  box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.Actions > div {
+  background-color: transparent;
+  border: none;
+  border-radius: 0 !important;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.35rem 0.5rem;
+  text-align: center;
+}
+
+.Actions > div:hover {
+  background-color: #00007f;
+  color: #fff;
+}

@@ -22,3 +22,12 @@ export enum Status {
   programmer,
   hacker,
 }
+
+export enum Actions {
+  computer,
+  software,
+  hacking,
+  bbs,
+  job,
+  entertainment,
+}

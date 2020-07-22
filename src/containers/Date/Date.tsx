@@ -1,18 +1,12 @@
-import React, { Dispatch, SetStateAction, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
+import { dateState } from '../../constants/initialState';
 
 import { Date as DateComponent } from '../../components';
 
-import { Date as DateType } from '../../types';
+const DateContainer: React.FC = () => {
+  const [date, setDate] = useState(dateState);
 
-type DateProps = {
-  date: DateType;
-  handleChangeDateState: Dispatch<SetStateAction<DateType>>;
-};
-
-const DateContainer: React.FC<DateProps> = ({
-  date,
-  handleChangeDateState,
-}) => {
   const d = new Date(date);
 
   const fullDate = `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()}`;
@@ -20,9 +14,7 @@ const DateContainer: React.FC<DateProps> = ({
 
   useEffect(() => {
     const interval = setInterval(() => {
-      handleChangeDateState(
-        new Date(d.setTime(d.getTime() + 60 * 60 * 1000)).toString(),
-      );
+      setDate(new Date(d.setTime(d.getTime() + 60 * 60 * 1000)).toString());
     }, 1000);
 
     return () => clearInterval(interval);
