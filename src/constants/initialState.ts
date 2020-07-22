@@ -17,7 +17,4 @@ export const userState: Player = {
   status: DEFAULT_USER_STATUS,
   mood: DEFAULT_USER_MOOD,
 };
-export const dateState: Date = {
-  gameDate: DEFAULT_DATE,
-  isCounting: false,
-};
+export const dateState: Date = DEFAULT_DATE;

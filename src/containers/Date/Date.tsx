@@ -4,38 +4,31 @@ import { Date as DateComponent } from '../../components';
 
 import { Date as DateType } from '../../types';
 
-import useDate from './useDate';
-
 type DateProps = {
   date: DateType;
   handleChangeDateState: Dispatch<SetStateAction<DateType>>;
 };
 
-const Date: React.FC<DateProps> = ({
-  date: dateObject,
+const DateContainer: React.FC<DateProps> = ({
+  date,
   handleChangeDateState,
 }) => {
-  const { date, time, updateTime } = useDate({
-    dateObject,
-    handleChangeDateState,
-  });
+  const d = new Date(date);
+
+  const fullDate = `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()}`;
+  const time: string = d.getHours().toString();
 
   useEffect(() => {
-    const ass = async () => {
-      const her = await updateTime(dateObject.gameDate);
+    const interval = setInterval(() => {
+      handleChangeDateState(
+        new Date(d.setTime(d.getTime() + 60 * 60 * 1000)).toString(),
+      );
+    }, 1000);
 
-      return her;
-    };
+    return () => clearInterval(interval);
+  });
 
-    ass().then((her2) => {
-      handleChangeDateState({
-        ...dateObject,
-        gameDate: her2,
-      });
-    });
-  }, [dateObject, handleChangeDateState, updateTime]);
-
-  return <DateComponent date={date} time={time} />;
+  return <DateComponent date={fullDate} time={time} />;
 };
 
-export default Date;
+export default DateContainer;

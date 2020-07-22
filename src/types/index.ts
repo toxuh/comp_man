@@ -8,7 +8,4 @@ export type Player = {
   mood: number;
 };
 
-export type Date = {
-  gameDate: string;
-  isCounting: boolean;
-};
+export type Date = string;

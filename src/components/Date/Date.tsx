@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Date.css';
+
 export type DateComponent = {
   date: string;
   time: string;
@@ -7,10 +9,10 @@ export type DateComponent = {
 
 const Date: React.FC<DateComponent> = ({ date, time }) => {
   return (
-    <p>
-      <span>{date}</span>
-      <span>{time}</span>
-    </p>
+    <div className="DatePanel">
+      <div className="DatePanel__field Date">{date}</div>
+      <div className="DatePanel__field Time">{`${time}:00`}</div>
+    </div>
   );
 };
 

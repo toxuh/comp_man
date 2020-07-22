@@ -1,0 +1,28 @@
+.DatePanel {
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 3px 0;
+  outline: 2px solid #c1c1c1;
+  outline-offset: -7px;
+  overflow: hidden;
+  padding: 11px 13px;
+  position: relative;
+}
+
+.DatePanel__field {
+  display: inline-block;
+  line-height: 27px;
+}
+
+.DatePanel__field.Date {
+  color: #1f227a;
+  font-size: 16px;
+  width: 50%;
+}
+
+.DatePanel__field.Time {
+  box-shadow: inset 1px 1px 2px #777;
+  text-align: center;
+  width: 50%;
+}
