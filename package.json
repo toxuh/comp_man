@@ -27,7 +27,9 @@
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-intl": "^5.4.0",
     "react-scripts": "3.4.1",
+    "remove": "^0.1.5",
     "typescript": "3.9.7"
   },
   "scripts": {
@@ -36,7 +38,8 @@
     "test:all": "react-scripts test --watchAll=false",
     "lint": "eslint --ext .js,.ts,.tsx .",
     "predeploy": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "extract-messages": "extract-messages -l=en,ru -o src/i18n/translations --flat true \"src/**/messages.ts\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -65,6 +68,8 @@
     "@types/react": "^16.9.43",
     "@types/react-bootstrap": "^1.0.1",
     "@types/react-dom": "^16.9.8",
+    "@types/react-helmet": "^6.0.0",
+    "@types/react-intl": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
     "enzyme": "^3.11.0",
@@ -82,6 +87,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "extract-react-intl-messages": "^4.1.1",
     "gh-pages": "^3.1.0",
     "prettier": "^2.0.5"
   },

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import I18nProvider from './i18n/I18nProvider';
+
 import App from './containers/App/App';
 
 import * as serviceWorker from './serviceWorker';
@@ -10,7 +12,9 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <I18nProvider>
+      <App />
+    </I18nProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
