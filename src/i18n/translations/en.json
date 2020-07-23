@@ -1,3 +1,10 @@
 {
+  "Actions.bbs": "BBS",
+  "Actions.computer": "Computer",
+  "Actions.entertainment": "Entertainment",
+  "Actions.hacking": "Hacking",
+  "Actions.job": "Find job",
+  "Actions.software": "Software",
+  "AgreeScreen.message": "When you complete this game, blah blah blah",
   "App.gameTitle": "Computer man {name}"
 }
