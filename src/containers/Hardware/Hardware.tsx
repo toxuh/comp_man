@@ -11,14 +11,14 @@ const Hardware: React.FC = () => {
 
   return (
     <Panel
-      header="Ваш компьютер"
+      header="hardwareHeading"
       fields={[
-        { name: 'Компьютер', value: Computer[hardware.computer] },
-        { name: 'Память', value: Memory[hardware.memory] },
-        { name: 'Винчестер', value: Disk[hardware.disk] },
-        { name: 'Модем', value: Modem[hardware.modem] },
-        { name: 'CD-ROM', value: CD[hardware.cd] },
-        { name: 'Sound Blaster', value: Sound[hardware.sound] },
+        { name: 'computer', value: Computer[hardware.computer] },
+        { name: 'memory', value: Memory[hardware.memory] },
+        { name: 'disk', value: Disk[hardware.disk] },
+        { name: 'modem', value: Modem[hardware.modem] },
+        { name: 'cd', value: CD[hardware.cd] },
+        { name: 'sound', value: Sound[hardware.sound] },
       ]}
     />
   );

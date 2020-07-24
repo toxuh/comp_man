@@ -11,13 +11,13 @@ const Software: React.FC = () => {
 
   return (
     <Panel
-      header="Установленный soft"
+      header="softwareHeading"
       fields={[
-        { name: 'Система', value: OS[software.os] },
-        { name: 'Антивирус', value: Antivirus[software.antivirus] },
-        { name: 'Программи-ие', value: Programming[software.programming] },
-        { name: 'BBS ка', value: Bbs[software.bbs] },
-        { name: 'Другой soft', value: Other[software.other] },
+        { name: 'system', value: OS[software.os] },
+        { name: 'antivirus', value: Antivirus[software.antivirus] },
+        { name: 'programming', value: Programming[software.programming] },
+        { name: 'bbs', value: Bbs[software.bbs] },
+        { name: 'otherSoftware', value: Other[software.other] },
       ]}
     />
   );

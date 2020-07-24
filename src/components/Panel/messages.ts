@@ -5,6 +5,22 @@ export default defineMessages({
     id: 'Panel.common.no',
     defaultMessage: 'No',
   },
+  money: {
+    id: 'Panel.player.money',
+    defaultMessage: 'Money',
+  },
+  points: {
+    id: 'Panel.player.points',
+    defaultMessage: 'Points',
+  },
+  status: {
+    id: 'Panel.player.status',
+    defaultMessage: 'Status',
+  },
+  mood: {
+    id: 'Panel.player.mood',
+    defaultMessage: 'Mood',
+  },
   newbie: {
     id: 'Panel.player.status.newbie',
     defaultMessage: 'Newbie',
@@ -32,6 +48,34 @@ export default defineMessages({
   excellent: {
     id: 'Panel.player.mood.excellent',
     defaultMessage: 'Excellent',
+  },
+  hardwareHeading: {
+    id: 'Panel.hardware.hardwareHeading',
+    defaultMessage: 'Your computer',
+  },
+  computer: {
+    id: 'Panel.hardware.computer',
+    defaultMessage: 'Computer',
+  },
+  memory: {
+    id: 'Panel.hardware.memory',
+    defaultMessage: 'Memory',
+  },
+  disk: {
+    id: 'Panel.hardware.disk',
+    defaultMessage: 'Disk',
+  },
+  modem: {
+    id: 'Panel.hardware.modem',
+    defaultMessage: 'Modem',
+  },
+  cd: {
+    id: 'Panel.hardware.cd',
+    defaultMessage: 'CD-ROM',
+  },
+  sound: {
+    id: 'Panel.hardware.sound',
+    defaultMessage: 'Sound Blaster',
   },
   c386: {
     id: 'Panel.hardware.computer.c386',
@@ -68,6 +112,30 @@ export default defineMessages({
   soundBlaster: {
     id: 'Panel.hardware.sound.soundBlaster',
     defaultMessage: 'Sound Blaster',
+  },
+  softwareHeading: {
+    id: 'Panel.software.softwareHeading',
+    defaultMessage: 'Installed software',
+  },
+  system: {
+    id: 'Panel.software.system',
+    defaultMessage: 'Operation system',
+  },
+  antivirus: {
+    id: 'Panel.software.antivirus',
+    defaultMessage: 'Antivirus',
+  },
+  programming: {
+    id: 'Panel.software.programming',
+    defaultMessage: 'Programming language',
+  },
+  bbs: {
+    id: 'Panel.software.bbs',
+    defaultMessage: 'BBS',
+  },
+  otherSoftware: {
+    id: 'Panel.software.otherSoft',
+    defaultMessage: 'Other software',
   },
   windows3: {
     id: 'Panel.software.os.windows3',
@@ -115,6 +183,6 @@ export default defineMessages({
   },
   otherSoft: {
     id: 'Panel.software.other.otherSoft',
-    defaultMessage: 'Other soft',
+    defaultMessage: 'Other software',
   },
 });

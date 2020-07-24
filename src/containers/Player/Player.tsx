@@ -12,10 +12,10 @@ const Player: React.FC = () => {
   return (
     <Panel
       fields={[
-        { name: 'Денег', value: `${user.money}$`, noTranslate: true },
-        { name: 'Очки', value: user.points, noTranslate: true },
-        { name: 'Ваш статус', value: Status[user.status] },
-        { name: 'Настроение', value: Mood[user.mood] },
+        { name: 'money', value: `${user.money}$`, noTranslate: true },
+        { name: 'points', value: user.points, noTranslate: true },
+        { name: 'status', value: Status[user.status] },
+        { name: 'mood', value: Mood[user.mood] },
       ]}
     />
   );

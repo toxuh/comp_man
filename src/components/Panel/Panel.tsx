@@ -15,10 +15,14 @@ const Panel: React.FC<PanelComponent> = ({ header, fields }) => {
 
   return (
     <div className="Panel">
-      {header && <div className="Panel__header">{header}</div>}
+      {header && (
+        <div className="Panel__header">
+          {intl.formatMessage(messages[header as keyof typeof messages])}
+        </div>
+      )}
       {fields.map(({ name, value, noTranslate }) => (
         <p key={name} className="Panel__field">
-          {`${name} -`}
+          {`${intl.formatMessage(messages[name as keyof typeof messages])} -`}
           <span>
             {noTranslate
               ? value
