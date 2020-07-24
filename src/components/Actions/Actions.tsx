@@ -17,7 +17,7 @@ const Actions: React.FC<ActionsProps> = ({ items }) => {
     <ListGroup className="Actions">
       {items.map((item) => (
         <ListGroup.Item key={item}>
-          {intl.formatMessage(messages[item])}
+          {intl.formatMessage(messages[item as keyof typeof messages])}
         </ListGroup.Item>
       ))}
     </ListGroup>

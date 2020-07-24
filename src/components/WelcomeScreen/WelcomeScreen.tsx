@@ -1,4 +1,5 @@
 import React, { Dispatch, SetStateAction, useRef, useState } from 'react';
+import { useIntl } from 'react-intl';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 
 import { GAME_NAME } from '../../constants';
@@ -6,6 +7,8 @@ import { GAME_NAME } from '../../constants';
 import { PlayerName as PlayerNameType } from '../../types';
 
 import welcomeImage from './intro.png';
+
+import messages from './messages';
 
 import './WelcomeScreen.css';
 
@@ -16,6 +19,8 @@ type WelcomeScreenProps = {
 const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   handleSetPlayerName,
 }) => {
+  const intl = useIntl();
+
   const inputRef = useRef(null);
   const [name, setName] = useState<PlayerNameType>(undefined);
 
@@ -28,7 +33,7 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
       </Row>
       <Row>
         <Col className="WelcomeScreen__label">
-          <Form.Label>Введите своё имя:</Form.Label>
+          <Form.Label>{intl.formatMessage(messages.enterYourName)}</Form.Label>
         </Col>
         <Col>
           <Form.Control
@@ -47,7 +52,7 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             className="WelcomeScreen__button"
             onClick={() => handleSetPlayerName(name)}
           >
-            Ввести
+            {intl.formatMessage(messages.heading)}
           </Button>
         </Col>
       </Row>

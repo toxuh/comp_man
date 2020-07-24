@@ -47,25 +47,25 @@ export enum Actions {
 
 export enum Computer {
   no,
-  '386-66',
-  '486-66',
+  c386,
+  c486,
 }
 
 export enum Memory {
   no,
-  '4Mb',
-  '8Mb',
-  '16Mb',
+  mb4,
+  mb8,
+  mb16,
 }
 
 export enum Disk {
   no,
-  '210Mb',
+  mb210,
 }
 
 export enum Modem {
   no,
-  '2400Mb',
+  mb2400,
 }
 
 export enum CD {
@@ -75,7 +75,7 @@ export enum CD {
 
 export enum Sound {
   no,
-  yes,
+  soundBlaster,
 }
 
 export enum OS {
@@ -88,23 +88,24 @@ export enum OS {
 
 export enum Antivirus {
   no,
-  yes,
+  avNormal,
+  avHacker,
 }
 
 export enum Programming {
   no,
   pascal,
   assembler,
-  visualBasic,
+  vb,
   delphi,
 }
 
 export enum Bbs {
   no,
-  yes,
+  ownBbs,
 }
 
 export enum Other {
   no,
-  yes,
+  otherSoft,
 }

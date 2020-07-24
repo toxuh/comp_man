@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
-export default defineMessages<keyof Record<string, undefined>>({
+export default defineMessages({
   computer: {
     id: 'Actions.computer',
     defaultMessage: 'Computer',
