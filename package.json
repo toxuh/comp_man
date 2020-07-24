@@ -35,6 +35,7 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "test:all": "react-scripts test --watchAll=false",
+    "test:cover": "react-scripts test --watchAll=false  --runInBand --coverage",
     "lint": "eslint --ext .js,.ts,.tsx .",
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build",
@@ -95,7 +96,10 @@
       "!src/**/*.stories.{ts,tsx}",
       "!src/**/constants.ts",
       "!src/**/messages.ts",
-      "!src/**/index.{js,jsx,ts,tsx}"
+      "!src/**/index.{js,jsx,ts,tsx}",
+      "!src/index.tsx",
+      "!src/react-app-env.d.ts",
+      "!src/serviceWorker.ts"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
