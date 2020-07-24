@@ -1,4 +1,12 @@
-import { Agreed, Date, Hardware, Player, PlayerName, Software } from '../types';
+import {
+  Agreed,
+  Date,
+  Hardware,
+  Player,
+  PlayerName,
+  Software,
+  Work,
+} from '../types';
 
 import {
   DEFAULT_DATE,
@@ -18,6 +26,8 @@ import {
   DEFAULT_USER_NAME,
   DEFAULT_USER_POINTS,
   DEFAULT_USER_STATUS,
+  DEFAULT_WORK_POSITION,
+  DEFAULT_WORK_SALARY,
 } from './index';
 
 export const agreedState: Agreed = false;
@@ -46,4 +56,9 @@ export const softwareState: Software = {
   programming: DEFAULT_SOFTWARE_PROGRAMMING,
   bbs: DEFAULT_SOFTWARE_BBS,
   other: DEFAULT_SOFTWARE_OTHER,
+};
+
+export const workState: Work = {
+  salary: DEFAULT_WORK_SALARY,
+  position: DEFAULT_WORK_POSITION,
 };

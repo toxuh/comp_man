@@ -1,0 +1,19 @@
+.Work {
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 3px 0;
+  outline: 2px solid #c1c1c1;
+  outline-offset: -7px;
+  overflow: hidden;
+  padding: 17px 13px 13px;
+  position: relative;
+}
+
+.Work__field {
+  white-space: nowrap;
+}
+
+.WorkP__description {
+  margin-left: 4px;
+}

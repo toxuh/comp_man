@@ -55,5 +55,12 @@
   "Panel.software.softwareHeading": "Установленный soft",
   "Panel.software.system": "Система",
   "WelcomeScreen.enterYourName": "Введите свое имя:",
-  "WelcomeScreen.heading": "Ввести"
+  "WelcomeScreen.heading": "Ввести",
+  "Work.header": "Ваша работа",
+  "Work.perDay": "в день",
+  "Work.position.hacker": "Хакер",
+  "Work.position.janitor": "Дворник",
+  "Work.position.plumber": "Сантехник",
+  "Work.position.programmer": "Программист",
+  "Work.position.unemployed": "Безработный"
 }

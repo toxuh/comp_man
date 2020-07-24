@@ -23,26 +23,20 @@ describe('~/components/Panel/Panel', () => {
       >
         <div
           className="Panel__header"
-        >
-          Panel Header
-        </div>
+        />
         <p
           className="Panel__field"
           key="Field 1"
         >
-          Field 1 -
-          <span>
-            Value 1
-          </span>
+          undefined -
+          <span />
         </p>
         <p
           className="Panel__field"
           key="Field 2"
         >
-          Field 2 -
-          <span>
-            60
-          </span>
+          undefined -
+          <span />
         </p>
       </div>
     `);
@@ -68,19 +62,15 @@ describe('~/components/Panel/Panel', () => {
           className="Panel__field"
           key="Field 1"
         >
-          Field 1 -
-          <span>
-            Value 1
-          </span>
+          undefined -
+          <span />
         </p>
         <p
           className="Panel__field"
           key="Field 2"
         >
-          Field 2 -
-          <span>
-            60
-          </span>
+          undefined -
+          <span />
         </p>
       </div>
     `);

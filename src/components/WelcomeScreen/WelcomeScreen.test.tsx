@@ -38,7 +38,7 @@ describe('~/components/WelcomeScreen/WelcomeScreen', () => {
               column={false}
               srOnly={false}
             >
-              Введите своё имя:
+              <Component />
             </FormLabel>
           </Col>
           <Col>
@@ -64,7 +64,7 @@ describe('~/components/WelcomeScreen/WelcomeScreen', () => {
               onClick={[Function]}
               variant="primary"
             >
-              Ввести
+              <Component />
             </Button>
           </Col>
         </Row>

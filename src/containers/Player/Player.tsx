@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 
 import { Panel } from '../../components';
 
-import { userState } from '../../constants/initialState';
-
 import { Mood, Status } from '../../constants';
+import { userState } from '../../constants/initialState';
 
 const Player: React.FC = () => {
   const [user] = useState(userState);

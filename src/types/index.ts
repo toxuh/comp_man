@@ -25,3 +25,8 @@ export type Software = {
   bbs: number;
   other: number;
 };
+
+export type Work = {
+  position: number;
+  salary: number;
+};

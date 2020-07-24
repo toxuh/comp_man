@@ -23,6 +23,9 @@ export const DEFAULT_SOFTWARE_PROGRAMMING = 0;
 export const DEFAULT_SOFTWARE_BBS = 0;
 export const DEFAULT_SOFTWARE_OTHER = 0;
 
+export const DEFAULT_WORK_POSITION = 0;
+export const DEFAULT_WORK_SALARY = 0;
+
 export enum Mood {
   bad,
   normal,
@@ -108,4 +111,12 @@ export enum Bbs {
 export enum Other {
   no,
   otherSoft,
+}
+
+export enum Work {
+  unemployed,
+  janitor,
+  plumber,
+  programmer,
+  hacker,
 }

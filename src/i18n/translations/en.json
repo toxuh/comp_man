@@ -55,5 +55,12 @@
   "Panel.software.softwareHeading": "Installed software",
   "Panel.software.system": "Operation system",
   "WelcomeScreen.enterYourName": "Enter your name:",
-  "WelcomeScreen.heading": "Submit"
+  "WelcomeScreen.heading": "Submit",
+  "Work.header": "Your job",
+  "Work.perDay": "per day",
+  "Work.position.hacker": "Hacker",
+  "Work.position.janitor": "Janitor",
+  "Work.position.plumber": "Plumber",
+  "Work.position.programmer": "Programmer",
+  "Work.position.unemployed": "Unemployed"
 }

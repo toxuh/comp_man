@@ -21,16 +21,12 @@ describe('~/components/Actions/Actions', () => {
           active={false}
           disabled={false}
           key="Item 1"
-        >
-          Item 1
-        </ListGroupItem>
+        />
         <ListGroupItem
           active={false}
           disabled={false}
           key="Item 2"
-        >
-          Item 2
-        </ListGroupItem>
+        />
       </ListGroup>
     `);
   });
